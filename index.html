@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1, minimum-scale=1/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Howard Wang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    
+    <ul class="navbar-nav">
+      <li><a href="#_about">About</a></li>
+      <li><a href="#_work_experience">Work Experience</a></li>
+      <li><a href="#_projects">Projects</a></li>
+      <li><a href="#_education">Education</a></li>
+      <li><a href="resume/MyResume_4.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  
+  <div id="side-menu" class="side-nav">
+    <a onclick="closeSideMenu()" href="#_about">About</a>
+    <a onclick="closeSideMenu()" href="#_work_experience">Work Experience</a>
+    <a onclick="closeSideMenu()" href="#_projects">Projects</a>
+    <a onclick="closeSideMenu()" href="#_education">Education</a>
+    <a onclick="closeSideMenu()" href="resume-/MyResume_4.pdf">Resume</a>
+  </div>
+  
+  <div class="container">
+   <div id="main" onclick="closeSideMenu()">
+     <br><br>
+     <div class="slider">
+      <img class="me-slider item1" src="images/header-image/myportrait3.png" alt="Portrait 1"/>
+      <img class="me-slider item2" src="images/header-image/myportrait4.png" alt="Portrait 2"/>
+     </div>
+     <br><br>
+   </div>
+  </div>
+  
+  <script src="js/init.js"></script>
+</body>
+</html>

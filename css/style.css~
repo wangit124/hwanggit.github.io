@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body{
+    font-family:"Muli", sans-serif;
+    background-color:#FFF;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.navbar{
+    background-color:#7CDBD5;   
+    width:100%;
+    overflow-x:hidden;
+    height:63px;
+}
+
+.navbar a:active{
+    float:left;
+    display:block;
+    color:#FFF;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.navbar ul{
+    margin:8px 0 0 0;
+    list-style:none;
+}
+
+.navbar a:hover{
+    background-color:#02C8A7;
+    color:#FFF;
+    transition:0.5s;
+}
+
+.side-nav{
+    height:100%;
+    width:0px;
+    position:fixed;
+    z-index=1;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:71px;
+    transition:0.5s;
+}
+
+.side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#ccc;
+    display:block;
+    transition:0s;
+}
+
+.side-nav a:hover{
+    background-color:#FFF;
+    color:#7CDBD5;
+}
+
+.container {  
+    overflow-x:hidden;
+    width:100%
+    position:relative;
+    top: 7vh;
+}
+
+#main {
+    top:0;
+    transition:margin-left 0.5s;
+    position:center;
+    padding:20px;
+    overflow:hidden;
+    width:100%;
+}
+
+.me-slider{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  object-fit: cover;
+  object-position: center; 
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 5px solid #7CDBD5;
+}
+
+@media(max-width:568px) {
+    .navbar-nav{display:none}
+    .mobile-only {
+	display:block;
+    } 
+    .desktop-only {
+	display:none !important;
+    }
+}
+
+@media(min-width:568px) {
+    .desktop-only {
+	display:block !important;
+    } 
+    .mobile-only {
+	display:none !important;
+    }
+}
