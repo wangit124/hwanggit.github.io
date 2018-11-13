@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1, minimum-scale=1/>
+<meta name="viewport" content="user-scalable=no width=device-width, 
+		initial-scale=1.0 maximum-scale=1, minimum-scale=1/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>Howard Wang</title>
@@ -37,50 +38,37 @@
     <a onclick="closeSideMenu()" href="resume-/MyResume_4.pdf">Resume</a>
   </div>
   
-  <div class="container">
-   <div id="main" onclick="closeSideMenu()">
+  <div class="container" onclick="closeSideMenu()">
+   <div id="main">
      <br><br>
-     <div class="slider">
-      <img class="me-slider item1" src="images/header-image/myportrait3.png" alt="Portrait 1"/>
-      <img class="me-slider item2" src="images/header-image/myportrait4.png" alt="Portrait 2"/>
+     <div class="slider-wrap">
+       <div class="me-slider" id="slider">
+         <div class="slideholder">
+            <div class="slide" id="slide-0"></div>
+	    <div class="slide" id="slide-1"></div>
+         </div>
+       </div> 
      </div>
-     <br><br>
+     <h1>Hi! I'm Howard!</h1>
+     <div class="text-wrapper">
+	<p> <font size="4">
+        <br>I'm a Bachelor's student pursuing a <b>BS</b> in <b>Computer Science</b> at <b>UC San Diego</b>, expected to
+        finish in June, 2020. 
+        <br>
+        <br>
+        Previously, I have worked as a <b>Code Manager</b> at <b>Luminerva</b>, my local student start-up.
+        <br>
+        <br>
+        Currently, I am seeking a <b>CSE Tutor</b> position at my University, as well as a <b>Summer 2019 Internship</b>
+        in <b>Software Engineering</b>.
+        <br>
+        <br>
+        My goal is to learn as much as I can about Software Engineering, and apply my projects to everyday life!
+        </font> </p>
+     </div>
    </div>
   </div>
-  
+ 
   <script src="js/init.js"></script>
-
-  <script>
-   const slider= document.querySelector('.slider');
-      let isDown=false;
-      let startX;
-      let scrollLeft;
-
-   slider.addEventListener('mousedown', (e) => {
-     isDown=true;
-     slider.classList.add('active');
-     startX = e.pageX - slider.offsetLeft;
-     scrollLeft = slider.scrollLeft;
-   });
-
-   slider.addEventListener('mouseleave', () => {
-     isDown=false;
-     slider.classList.remove('active');
-   });
-
-   slider.addEventListener('mouseup', () => {
-     isDown=false;
-     slider.classList.remove('active');
-   });
-
-   slider.addEventListener('mousemove', (e) => {
-     if(!idDown) return; 
-     e.preventDefault();
-     const x = e.pageX - slider.offsetLeft;
-     const walk= (x - startX)*3;
-     slider.scrollLeft= scrollLeft - walk;
-   });
-  </script>
-
 </body>
 </html>
