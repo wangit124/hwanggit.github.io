@@ -73,26 +73,51 @@ body{
 
 #main {
     top:0;
-    transition:margin-left 0.5s;
     position:center;
     padding:20px;
     overflow:hidden;
     width:100%;
+    transition:0.5s;
 }
 
-.me-slider{
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  object-fit: cover;
-  object-position: center; 
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  border: 5px solid #7CDBD5;
+.slider-wrap {
+    border-radius:50%;
+    border: 5px solid #7CDBD5;
+    width: px;
+    height:240px;
+    width:240px;
+    margin: auto;
 }
 
-@media(max-width:568px) {
+.me-slider {
+    border-radius:50%;
+    overflow-x:scroll;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.slideholder {
+    width:200%;
+}
+
+.slide {
+    float:left;
+    width:240px;
+    height:240px;
+    background-position:center;
+    position:relative;
+}
+
+#slide-0 {
+    background-image: url('../images/header-image/myportrait2.png');
+}
+
+#slide-1 {
+    background-image: url('../images/header-image/myportrait4.png');
+}
+
+@media(max-width:650px) {
     .navbar-nav{display:none}
     .mobile-only {
 	display:block;
@@ -101,8 +126,7 @@ body{
 	display:none !important;
     }
 }
-
-@media(min-width:568px) {
+@media(min-width:650px) {
     .desktop-only {
 	display:block !important;
     } 

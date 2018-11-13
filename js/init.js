@@ -1,38 +1,37 @@
-   function openSideMenu() {
-      document.getElementById('side-menu').style.width='250px';
-   }
-    
-   function closeSideMenu() {
-      document.getElementById('side-menu').style.width='0';
-   }
-    
-   const slider= document.querySelector('.slider');
-      let isDown=false;
-      let startX;
-      let scrollLeft;
+function openSideMenu() {
+	document.getElementById('side-menu').style.width='250px';
+	document.getElementById('main').style.marginLeft='250px';
+}
 
-   slider.addEventListener('mousedown', (e) => {
-     isDown=true;
-     slider.classList.add('active');
-     startX = e.pageX - slider.offsetLeft;
-     scrollLeft = slider.scrollLeft;
-   });
+function closeSideMenu() {
+	document.getElementById('side-menu').style.width='0';
+	document.getElementById('main').style.marginLeft='0';
+}
 
-   slider.addEventListener('mouseleave', () => {
-     isDown=false;
-     slider.classList.remove('active');
-   });
+var slider={
+	
+	//define slide variables
+	el: {
+	    slider: $("#slider"),
+	    allSlides: $(".slide")
+	},
 
-   slider.addEventListener('mouseup', () => {
-     isDown=false;
-     slider.classList.remove('active');
-   });
+	//initial function, scroll slider
+	init: function() {
+	    this.el.slider.on("scroll",function(event) {
+		slider.moveSlidePosition(event);
+	    });
+	},
 
-   slider.addEventListener('mousemove', (e) => {
-     if(!idDown) return; 
-     e.preventDefault();
-     const x = e.pageX - slider.offsetLeft;
-     const walk= (x - startX)*3;
-     slider.scrollLeft= scrollLeft - walk;
-   }); 
-  
+	//helper function for scroll
+	moveSlidePosition: function(event) {
+	     this.el.allSlides.css({
+		"background-position": $(event.target).scrollLeft()/6-100+ "px 0"
+	     });
+	}
+};
+
+//initialize slider
+slider.init();
+
+
