@@ -47,7 +47,7 @@ b{
 }
 
 .navbar a{
-	    float:center;
+	    float:left;
 	        display:block;
 		    color:#FFF;
 		        text-align:center;
