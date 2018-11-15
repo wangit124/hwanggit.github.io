@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Libre+Franklin');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
 	font-family:'Abel', sans-serif;
@@ -29,6 +29,21 @@ p{
 	padding-left:6%;
 	text-align:left;
 	font-weight:normal;
+}
+
+b{
+	color:#c4242d;
+	font-weight:900;
+}
+
+.icon-row{
+        padding-top:40px;
+	text-align:center;	
+	position:center;
+}
+
+.icon-row a{
+	color:#c4242d;
 }
 
 .navbar{
