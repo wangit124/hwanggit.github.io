@@ -8,13 +8,29 @@ body{
 	overflow-x:hidden;
 }
 
+/*#overlay {
+position: fixed; /* Sit on top of the page content */
+/*display: none; /* Hidden by default */
+/*width: 100%; /* Full width (cover the whole page) */
+/*height: 100%; /* Full height (cover the whole page) */
+/*top: 0; 
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5); /* Black background
+with opacity */
+/*z-index: 2; /* Specify a stack order in case you're
+using a different order for other elements */
+	/*cursor: pointer; /* Add a pointer on hover */
+/*}*/
+
 h1{
 	position:center;
 	margin-top:20px;
 	margin-bottom:40px;
 	text-align:center;
 	color:#c4242d;
-	font-size:70px;
+	font-size:73px;
 }
 
 .text-wrapper{
@@ -60,13 +76,13 @@ b{
 .navbar a{
 	display:inline-block;
 	color:#FFF;
-	padding:19px 26px 20px;
+	padding:19px 26px 17px;
 	text-decoration:none;
-	font-size:18px;
+	font-size:19px;
 }
 
 .open-slide a{
-	padding:12px 16px 11px;
+	padding:12px 16px 7px;
 	position:fixed;
 }
 
@@ -91,7 +107,7 @@ b{
 	height:100%;
 	width:0px;
 	position:fixed;
-	z-index=1;
+	z-index:1;
 	top:0;
 	left:0;
 	background-color:#111;
@@ -118,11 +134,12 @@ b{
 .container {  
 	overflow:hidden;
 	width:100%;
+	height:100%;
 	margin:0;
 	position:center;
 }
 
-#main {
+#about-main {
 	position:center;
 	overflow:hidden;
 	margin:50px auto;
@@ -131,8 +148,9 @@ b{
 }
 
 .slider-wrap {
+	-webkit-box-shadow: 0 0px 5px 1px black;
 	border-radius:50%;
-	border: 7px solid #c4342d;
+	border: 8px solid #c4342d;
 	height:240px;
 	width:240px;
 	margin:auto;
@@ -166,6 +184,35 @@ b{
 	background-image: url('../images/header-image/myportrait4.png');
 }
 
+#work-main {
+	position:center;
+	overflow:hidden;
+	margin:50px auto;
+	width:100%;
+	transition:0.5s;
+}
+
+#rotating-carousel {
+	position:relative;
+	width:600px;
+	height:300px;
+	border:1px solid #000000;
+	margin:auto;
+}
+
+#rotating-carousel .item {
+	position:absolute;
+	width:100px;
+	height:100px;
+	background: url('../images/header-image/myportrait3.png');
+	background-size:cover;
+	background-position:center;
+	border-radius:4px;
+	border: 1px solid #000000;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
 @media(max-width:630px) {
 	.navbar-nav{display:none}
 }
