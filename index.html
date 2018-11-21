@@ -7,9 +7,14 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>Howard Wang</title>
+
+<script src="js/TweenMax.min.js"></script>
+<script src="js/init.js"></script>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body onload="pageLoadInit()">
   <nav class="navbar">
     <span class="open-slide"> 
      <a href="#" onclick="openSideMenu()">
@@ -72,23 +77,69 @@
 	 <a href="http://linkedin.com/in/hwangprof" class="fa fa-linkedin-square fa-5x"></a>
      </div>
    </div>
-   
-   <br><br>
-   <br><br>
    <div id="work-main">
-     <br><br>
-     <div id="rotating-carousel">
-	<div class="item-container">
-	   <div class="item" id=item-0"></div>
-	   <div class="item" id=item-1"></div>
-	   <div class="item" id=item-2"></div>
-	</div>
+     <br>
+     <div class="text-wrapper">
+        <h2>Work Experience</h2>
+     </div>
+    
+    <div class= "work-items">
+     <div class="flipper">
+       <div class="flipper-inner">
+	 <div class="flipper-outer">
+	    <img src="images/header-image/myportrait2.png" style="width:310px;
+	    height:250px;">
+	    <div class="caption">Bob</div>
+	 </div>
+	 <div class="flipper-back">
+	 </div>
+       </div>
+     </div>
+         
+     <div class="flipper">
+       <div class="flipper-inner">
+	 <div class="flipper-outer">
+	    <img src="images/header-image/myportrait2.png" style="width:310px;
+	    height:250px;">
+	    <div class="caption">Luminerva</div>
+	 </div>
+	 <div class="flipper-back">
+	 </div>
+       </div>
      </div>
      
-     <div id="debug" style="font-size:26px"></div>
+     <div class="flipper">
+       <div class="flipper-inner">
+	 <div class="flipper-outer">
+	    <img src="images/header-image/myportrait2.png" style="width:310px;
+	    height:250px;">
+	    <div class="caption">Kumon</div>
+	 </div>
+	 <div class="flipper-back">
+	 </div>
+       </div>
+     </div>
+ 
+    </div>
+   </div>
+   
+   <div id="project-main">
+     <div class="text-wrapper">
+        <h1>Projects</h1>
+     </div>
+     <div id="carousel-wrapper">
+       <div id="carousel">
+	<div><img src="images/header-image/myportrait2.png"/></div> 
+	<div><img src="images/header-image/myportrait2.png"/></div> 
+	<div><img src="images/header-image/myportrait2.png"/></div> 
+	<div><img src="images/header-image/myportrait2.png"/></div> 
+       </div>
+       <div id="carousel-nav">
+	<a id="prev" href="#">prev</a>
+	<a id="next" href="#">next</a>
+       </div>
+     </div>
    </div>
  </div>
- <script src="js/TweenMax.min.js"></script>
- <script src="js/init.js"></script>
 </body>
 </html>
