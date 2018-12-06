@@ -1,3 +1,3 @@
 # Personal Website
 
-https://hwanggit.github.io contains my resume, projects, and personal information. 
+http://www.h-wang.me/ contains my resume, projects, and personal information. 
