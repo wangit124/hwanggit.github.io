@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="user-scalable=no width=device-width, 
-		initial-scale=1.0 maximum-scale=1, minimum-scale=1/>
+		initial-scale=1.0 maximum-scale=1, minimum-scale=1/">
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>Howard Wang</title>
 
-<script src="js/TweenMax.min.js"></script>
 <script src="js/init.js"></script>
 
 <link rel="stylesheet" href="css/style.css">
@@ -18,29 +17,41 @@
   <nav class="navbar">
     <span class="open-slide"> 
      <a href="#" onclick="openSideMenu()">
-        <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        <svg width="25" height="20">
+            <path d="M0,3 30,3" stroke="#FFF" stroke-width="3"/>
+            <path d="M0,10 30,10" stroke="#FFF" stroke-width="3"/>
+            <path d="M0,17 30,17" stroke="#FFF" stroke-width="3"/>
         </svg>
      </a>
     </span>
      
      <ul class="navbar-nav">
+
+          <div class="slider-wrap-2">
+            <div class="me-slider-2" id="slider">
+              <div class="slideholder-2">
+                 <div class="slide-2" id="slide-1"></div>
+              </div>
+            </div> 
+          </div>
+          <li><span><a href="tel:8584057271" class="fa fa-phone"></a></span></li>
+          <li><span><a href="mailto:luw055@ucsd.edu" class="fa fa-envelope"></a></span></li>
+          <li><span><a href="https://www.facebook.com/howard.wang.509" class="fa fa-facebook"></a></span></li>
+      
       <li><a href="#_about">About</a></li>
-      <li><a href="#_work_experience">Work Experience</a></li>
+      <li><a href="#_experience">Experience</a></li>
       <li><a href="#_projects">Projects</a></li>
       <li><a href="#_education">Education</a></li>
-      <li><a href="resume/MyResume_4.pdf">Resume</a></li>
+      <li><a href="myresume5.pdf">Resume</a></li>
     </ul>
   </nav>
   
   <div id="side-menu" class="side-nav">
     <a onclick="closeSideMenu()" href="#_about">About</a>
-    <a onclick="closeSideMenu()" href="#_work_experience">Work Experience</a>
+    <a onclick="closeSideMenu()" href="#_experience">Experience</a>
     <a onclick="closeSideMenu()" href="#_projects">Projects</a>
     <a onclick="closeSideMenu()" href="#_education">Education</a>
-    <a onclick="closeSideMenu()" href="resume/MyResume_4.pdf">Resume</a>
+    <a onclick="closeSideMenu()" href="myresume5.pdf">Resume</a>
   </div>
   
   <div class="container" onclick="closeSideMenu()">
@@ -49,14 +60,14 @@
      <div class="slider-wrap">
        <div class="me-slider" id="slider">
          <div class="slideholder">
-            <div class="slide" id="slide-0"></div>
-	    <div class="slide" id="slide-1"></div>
+           <div class="slide" id="slide-0"></div>
+            <div class="slide" id="slide-1"></div>
          </div>
        </div> 
      </div>
      <div class="text-wrapper">
 	<h1>Hi! I'm Howard!</h1>
-	<p> <font size="5">
+	<p> <font size="4">
         I'm a Bachelor's student pursuing a <b>BS</b> in <b>Computer Science</b> at <b>UC San Diego</b>, expected to
         finish in June, 2020. 
         <br>
@@ -72,7 +83,6 @@
         </font> </p>
      </div>
      <div class="icon-row">
-	 <a href="mailto:luw055@ucsd.edu" class="fa fa-envelope-square fa-5x"></a>
 	 <a href="http://github.com/hwanggit" class="fa fa-github-square fa-5x"></a>
 	 <a href="http://linkedin.com/in/hwangprof" class="fa fa-linkedin-square fa-5x"></a>
      </div>
@@ -80,7 +90,7 @@
    <div id="work-main">
      <br>
      <div class="text-wrapper">
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
      </div>
     
     <div class= "work-items">
@@ -126,18 +136,6 @@
    <div id="project-main">
      <div class="text-wrapper">
         <h1>Projects</h1>
-     </div>
-     <div id="carousel-wrapper">
-       <div id="carousel">
-	<div><img src="images/header-image/myportrait2.png"/></div> 
-	<div><img src="images/header-image/myportrait2.png"/></div> 
-	<div><img src="images/header-image/myportrait2.png"/></div> 
-	<div><img src="images/header-image/myportrait2.png"/></div> 
-       </div>
-       <div id="carousel-nav">
-	<a id="prev" href="#">prev</a>
-	<a id="next" href="#">next</a>
-       </div>
      </div>
    </div>
  </div>
