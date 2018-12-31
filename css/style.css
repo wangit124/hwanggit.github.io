@@ -361,7 +361,7 @@ b{
 	cursor:default;
 }
 
-@media(max-width:630px) {
+@media(max-width:730px) {
 	.navbar-nav{
 		display:none;
 	}
@@ -399,7 +399,7 @@ b{
 	}
 }
 
-@media(min-width:630px) {
+@media(min-width:730px) {
 	.open-slide{display:none}
 	.desktop-only {
 		display:block !important;
