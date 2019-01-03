@@ -399,7 +399,7 @@ button {
 @media(max-width:730px) {
 	footer {
 		visibility:visible;
-		height:27vh;
+		height:40vh;
 		width:100%;
 	}
 	.navbar-nav{
