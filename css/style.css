@@ -62,7 +62,25 @@ b{
 .icon-row a{
 	color:#FFF;
 }
+.icon-row a:hover{
+	color:#67F2FF;
+	transition:0.5s;
+}
+.icon-row-2{
+    padding-top:10px;
+	text-align:center;	
+	position:center;
+}
 
+.icon-row-2 a{
+	margin:5px;
+	color:#FFF;
+}
+
+.icon-row-2 a:hover{
+	color:#993630;
+	transition:0.5s;
+}
 .navbar{
 	z-index:1000;
 	background-color:#FF8B24;   	
@@ -305,11 +323,28 @@ button {
 	-webkit-box-shadow: 0px 2px 1px 0px black;
 	background-color: #FFF;
 	z-index:5;
-	border-radius:5%;
+	border-radius:3%;
 	margin:auto;
 	height:70vw;
 	width:85vw;
 	overflow:hidden;
+}
+
+.video {
+	-webkit-box-shadow: 0px 2px 1px 0px black;
+	background-color: #FFF;
+	z-index:5;
+	border-radius:3%;
+	margin:auto;
+	height:70vw;
+	width:85vw;
+	overflow:hidden;
+}
+
+.video img{
+	width:100%;
+	height:90%;
+	transition:0.5s;
 }
 
 .flipper img{
@@ -350,7 +385,7 @@ button {
 
 .project-items {
 	margin:auto;
-	padding-bottom:10px;
+	padding-bottom:30px;
 	width:100%;
 	float:left;
 }
@@ -369,7 +404,7 @@ button {
 @media(max-width:730px) {
 	footer {
 		visibility:visible;
-		height:40vh;
+		height:27vh;
 		width:100%;
 	}
 	.navbar-nav{
@@ -422,7 +457,7 @@ button {
 
 @media(min-width:730px) {
 
-	.flipper {
+	.flipper, .video {
 		-webkit-box-shadow: 0px 2px 1px 0px black;
 		background-color: #FFF;
 		z-index:5;
@@ -432,6 +467,13 @@ button {
 		overflow:hidden;
 	}
 	.work-items {
+		z-index:1;
+		padding:30px;
+		padding-left:0;
+		height:55vw;
+		width:100%;
+	}
+	.project-items {
 		z-index:1;
 		padding:30px;
 		padding-left:0;
@@ -448,7 +490,7 @@ button {
 }
 
 @media(min-width:1000px) {
-	.flipper {
+	.flipper, .video {
 		-webkit-box-shadow: 0px 2px 1px 0px black;
 		background-color: #FFF;
 		z-index:5;
@@ -461,7 +503,15 @@ button {
 		display:inline-block;
 		text-align:center;
 		margin:none;
+		z-index:1;
+		height:30vw;
+		width:100vw;
+	}
+	.project-items {
+		display:inline-block;
+		text-align:center;
 		padding-left:11.8%;
+		margin:none;
 		z-index:1;
 		height:30vw;
 		width:25vw;
@@ -469,7 +519,12 @@ button {
 }
 
 @media(min-width:1190px) {
-	.work-items {
+	.project-items {
 		padding-left:12.2%;
 	}
+}
+
+.active {
+	background-color:#993630;
+	color:#FFF;
 }

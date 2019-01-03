@@ -9,8 +9,6 @@
 <title>Howard Wang</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/init.js"></script>
-
 </head>
 
 <body>
@@ -25,7 +23,7 @@
      </a>
     </span>
      
-     <ul class="navbar-nav">
+     <ul class="navbar-nav" id="navmenu">
 
           <div class="slider-wrap-2">
             <div class="me-slider-2" id="slider">
@@ -38,19 +36,20 @@
           <li><span><a href="mailto:luw055@ucsd.edu" class="fa fa-envelope"></a></span></li>
           <li><span><a href="https://www.facebook.com/howard.wang.509" class="fa fa-facebook"></a></span></li>
       
-      <li><a href="#_about">About</a></li>
-      <li><a href="#_experience">Experience</a></li>
-      <li><a href="#_projects">Projects</a></li>
-      <li><a href="#_education">Education</a></li>
+      <li><a href="#_about" id="about">About</a></li>
+      <li><a href="#_experience" id="experience">Experience</a></li>
+      <li><a href="#_projects" id= "projects">Projects</a></li>
+      <li><a href="#_education" id="education">Education</a></li>
       <li><a href="resumes/webresume.pdf">Resume</a></li>
     </ul>
   </nav>
   
   <div id="side-menu" class="side-nav">
-    <a onclick="closeSideMenu()" href="#_about">About</a>
-    <a onclick="closeSideMenu()" href="#_experience">Experience</a>
-    <a onclick="closeSideMenu()" href="#_projects">Projects</a>
-    <a onclick="closeSideMenu()" href="#_contacts">Contacts</a>
+    <a onclick="closeSideMenu()" href="#_about" id="about-2">About</a>
+    <a onclick="closeSideMenu()" href="#_experience" id="experience">Experience</a>
+    <a onclick="closeSideMenu()" href="#_projects" id= "projects">Projects</a>
+    <a onclick="closeSideMenu()" href="#_contacts" id="education">Education</a>
+    <a onclick="closeSideMenu()" href="#_contacts" id="contacts">Contacts</a>
     <a onclick="closeSideMenu()" href="resumes/webresume.pdf">Resume</a>
   </div>
   
@@ -69,13 +68,13 @@
 	<h1>Hi! I'm Howard!</h1>
 	<p> <font size="4">
         A <b>B.S. Computer Science</b> student at <b>UC San Diego</b>, expected to
-        finish in June, 2020. 
+        finish in June, 2021. 
         <br>
         <br>
         Previously, I have worked as a <b>Back End Developer</b> at <b>Luminerva Inc</b>, a student start-up.
         <br>
         <br>
-        Currently, I am exploring my passions for <b>Web and Mobile App Development</b>.
+        Currently, I am exploring my passions for <b>Web and Back End Development</b>.
         <br>
         <br>
         My goal is to learn as much as I can about Software Engineering, and apply my projects to everyday life!
@@ -95,59 +94,80 @@
     <div class= "work-items">
      <div class="flipper">
 
-      <img src="images/header-image/myportrait2.png"></img>
+      <img src="experience/lumlogo.png"></img>
       <div class="caption">
           <p style="color:black; font-weight:900;">Luminerva</p>
         </div>
      </div>
     </div>
-    
-    <div class= "work-items">
-        <div class="flipper">
-
-         <img src="images/header-image/myportrait2.png"></img>
-         <div class="caption">
-            <p style="color:black; font-weight:900;">Kumon</p>
-          </div>
-        </div>
-       </div>
-
     </div>
 
     <div id="project-main">
+        <br>
      <div class="text-wrapper">
         <h1>Projects</h1>
      </div>
-     <div class= "work-items">
+     <div class= "project-items">
         <div class="flipper">
 
-         <img src="images/header-image/myportrait2.png"></img>
+         <img src="projects/dldesign.png"></img>
          <div class="caption">
-            <p style="color:black; font-weight:900;">Kumon </p>
-            <button type="button">More</button>
+            <p style="color:black; font-weight:900;">DL-DESIGN.NET </p>
+            <br><br><a href='https://www.dl-design.net'>VISIT</a>
           </div>
         </div>
        </div>
-       <div class= "work-items">
+       <div class= "project-items">
           <div class="flipper">
   
-           <img src="images/header-image/myportrait2.png"></img>
+           <img src="projects/asrecords.png"></img>
            <div class="caption">
-              <p style="color:black; font-weight:900;">Kumon</p>
-              <button type="button">More</button>
+              <p style="color:black; font-weight:900;">AS RECORDS</p>
+              <br><br><a href='https://acsweb.ucsd.edu/~luw055'>VISIT</a>
             </div>
           </div>
          </div>
-         <div class= "work-items">
-            <div class="flipper">
-    
-             <img src="images/header-image/myportrait2.png"></img>
-             <div class="caption">
-                <p style="color:black; font-weight:900;">Kumon</p>
-                <button type="button">More</button>
-              </div>
+       <div class= "project-items">
+          <div class="flipper">
+  
+           <img src="projects/lifewatch2.0/LifeWatch.png"></img>
+           <div class="caption">
+              <p style="color:black; font-weight:900;">LIFEWATCH 2.0</p>
+              <br><br><a href='https://devpost.com/software/lifewatch-v8qnh6'>VISIT</a>
             </div>
-           </div>
+          </div>
+         </div>
+
+           <div class= "project-items">
+              <div class="flipper">
+      
+               <img src="projects/hikinnect.png"></img>
+               <div class="caption">
+                  <p style="color:black; font-weight:900;">HI-KINECT</p>
+                  <br><br><a href='https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy'>VISIT</a>
+                </div>
+              </div>
+             </div>
+             <div class= "project-items">
+                <div class="flipper">
+        
+                 <img src="projects/connect4.png"></img>
+                 <div class="caption">
+                    <p style="color:black; font-weight:900;">CONNECT4</p>
+                    <br><br><a href='videos/connect4.mov'>DEMO</a>
+                  </div>
+                </div>
+               </div>
+               <div class= "project-items">
+                  <div class="flipper">
+          
+                   <img src="projects/2048.png"></img>
+                   <div class="caption">
+                      <p style="color:black; font-weight:900;">2048</p>
+                      <br><br><a href='videos/2048.mov'>DEMO</a>
+                    </div>
+                  </div>
+                 </div>
     </div>
     <div id="education-main">
         <div class="text-wrapper">
@@ -177,8 +197,77 @@
     </div>
     <br><br>
     <footer>
+      <br>
+      <p><font size="6">Contacts</font></p>
+      <div class="icon-row-2">
+      <a href="tel:8584057271" class="fa fa-phone-square fa-5x"></a>
+      <a href="mailto:luw055@ucsd.edu" class="fa fa-envelope-square fa-5x"></a>
+      <a href="https://www.facebook.com/howard.wang.509" class="fa fa-facebook-square fa-5x"></a>
+      </div>
       </footer>
   </div>
+  <script>
+
+  $(document).ready(function(){
+    $("#navmenu li a").removeClass('active');
+  });
+
+  $('#about, #about-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("body").offset().top},
+		    'fast');
+  }); 
+  $('#experience,#experience-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#work-main").offset().top},
+		    'fast');
+  }); 
+  $('#projects,#projects-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#project-main").offset().top},
+		    'fast');
+  }); 
+  $('#education,#education-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#education-main").offset().top},
+		    'fast');
+  }); 
+
+  $('#contacts').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("footer").offset().top},
+		    'fast');
+  }); 
   
+  $("#navmenu li a").click(function() {
+    $("#navmenu li a").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  <!--created navbar interactive functionality-->
+
+  $(function(){
+  $(window).scroll(function(){
+    $("#navmenu li a").removeClass('active');
+    var about=$("#work-main").offset().top;
+    var experience=$("#project-main").offset().top;
+    var projects=$("#education-main").offset().top;
+    var education=$("footer").offset().top;
+    if($(this).scrollTop()>=0&&$(this).scrollTop()<=about-300){
+        $("#about").addClass('active');
+    }
+    else if($(this).scrollTop()>about-300&&$(this).scrollTop()<=experience-300){
+        $("#experience").addClass('active');
+    }
+    else if($(this).scrollTop()>experience-300&&$(this).scrollTop()<=projects-300){
+        $("#projects").addClass('active');
+    }
+    else if($(this).scrollTop()>projects-300&&$(this).scrollTop()<=education){
+        $("#education").addClass('active');
+    }
+  });
+  });
+  </script>
+  <script src="js/init.js"></script>
 </body>
 </html>
