@@ -322,12 +322,11 @@ button {
 .flipper {
 	-webkit-box-shadow: 0px 2px 1px 0px black;
 	background-color: #FFF;
-	z-index:5;
 	border-radius:3%;
 	margin:auto;
-	height:70vw;
+	height:72vw;
 	width:85vw;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 
 .video {
@@ -343,35 +342,48 @@ button {
 
 .video img{
 	width:100%;
-	height:90%;
+	height:87%;
 	transition:0.5s;
 }
 
 .flipper img{
 	width:100%;
-	height:90%;
+	height:87%;
 	transition:0.5s;
 }
 
 .caption {
+	width:80%;
+	margin:auto;
+	position:center;
 	text-align:center;
 	color:black;
 }
-
-.flipper:hover img{
-	height:0;
-	z-index:6;
+.caption a{
+	color:white;
+	-webkit-box-shadow: 0px 1px 3px 0px black;
+	padding:12px 18px;
+	background-color: #67F2FF;
+	text-decoration: none;
 }
 
-.flipper:hover img{
-	height:0;
-	z-index:6;
+.caption p {
+	color:black; 
+	font-weight:900;
+	margin-top:3%;
+	padding-bottom:10px;
 }
 
-.flipper:active img{
-	height:0;
-	z-index:6;
+.caption a:hover{
+	-webkit-box-shadow: inset 0 0 0px black;
+
 }
+
+.caption b{
+	color:#993630;
+	font-weight:10000;
+}
+
 #projects-main {
 	z-index:0;
 	background-color:#8630E4;
@@ -464,7 +476,10 @@ button {
 		margin:auto;
 		height:55vw;
 		width:65vw;
-		overflow:hidden;
+		overflow-x:hidden;
+	}
+	.caption p{
+		margin-top:5%;
 	}
 	.work-items {
 		z-index:1;
@@ -497,7 +512,7 @@ button {
 		margin:none;
 		height:30vw;
 		width:35vw;
-		overflow:hidden;
+		overflow-x:hidden;
 	}
 	.work-items {
 		display:inline-block;
@@ -508,7 +523,6 @@ button {
 		width:100vw;
 	}
 	.project-items {
-		display:inline-block;
 		text-align:center;
 		padding-left:11.8%;
 		margin:none;
