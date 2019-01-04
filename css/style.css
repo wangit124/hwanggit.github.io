@@ -209,12 +209,6 @@ b{
 	width:240px;
 	height:240px;
 	background-position:center;
-	transform: translateX(0);
-	transition: 1s;
-}
-
-.slideholder:hover .slide{
-	transform: translateX(-241px);
 }
 
 .slider-wrap-2 {
