@@ -193,7 +193,7 @@ b{
 
 
 .me-slider {
-	border-radius:3%;
+	border-radius:2%;
 	overflow-x:scroll;
 }
 ::-webkit-scrollbar { 
