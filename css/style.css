@@ -183,7 +183,7 @@ b{
 }
 
 .slider-wrap {
-	border-radius:50%;
+	border-radius:3%;
 	border: 6px solid #FFF;
 	height:240px;
 	width:240px;
@@ -193,7 +193,7 @@ b{
 
 
 .me-slider {
-	border-radius:50%;
+	border-radius:3%;
 	overflow-x:scroll;
 }
 ::-webkit-scrollbar { 
