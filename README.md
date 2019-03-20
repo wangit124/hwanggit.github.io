@@ -1,3 +1,4 @@
 # Personal Website
 
-http://www.h-wang.me/ contains my resume, projects, work experience, education and personal information
+![alt text](https://github.com/hwanggit/hwanggit.github.io/blob/master/projects/h-wang.png)
+
