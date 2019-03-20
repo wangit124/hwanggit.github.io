@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="user-scalable=no width=device-width, 
+		initial-scale=1.0 maximum-scale=1, minimum-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Howard Wang</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="open-slide"> 
+     <a href="#" onclick="openSideMenu()">
+        <svg width="25" height="20">
+            <path d="M0,3 30,3" stroke="#FFF" stroke-width="3"/>
+            <path d="M0,10 30,10" stroke="#FFF" stroke-width="3"/>
+            <path d="M0,17 30,17" stroke="#FFF" stroke-width="3"/>
+        </svg>
+     </a>
+    </span>
+     
+     <ul class="navbar-nav" id="navmenu">
+          <div class="slider-wrap-2">
+            <div class="me-slider-2" id="slider">
+              <div class="slideholder-2">
+                 <div class="slide-2" id="slide-1"></div>
+              </div>
+            </div> 
+          </div>
+          <li><span><a href="tel:8584057271" class="fa fa-phone"></a></span></li>
+          <li><span><a href="mailto:luw055@ucsd.edu" class="fa fa-envelope"></a></span></li>
+          <li><span><a href="https://www.facebook.com/howard.wang.509" class="fa fa-facebook"></a></span></li>
+      	  <li><a href="#_about" id="about">About</a></li>
+          <li><a href="#_experience" id="experience">Experience</a></li>
+          <li><a href="#_projects" id= "projects">Projects</a></li>
+          <li><a href="#_education" id="education">Education</a></li>
+          <li><a href="resumes/howard_wang_resume.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  
+  <div id="side-menu" class="side-nav">
+    <a onclick="closeSideMenu()" href="#_about" id="about-2">About</a>
+    <a onclick="closeSideMenu()" href="#_experience" id="experience">Experience</a>
+    <a onclick="closeSideMenu()" href="#_projects" id= "projects">Projects</a>
+    <a onclick="closeSideMenu()" href="#_contacts" id="education">Education</a>
+    <a onclick="closeSideMenu()" href="#_contacts" id="contacts">Contacts</a>
+    <a onclick="closeSideMenu()" href="resumes/howard_wang_resume.pdf">Resume</a>
+  </div>
+  
+  <div class="container" onclick="closeSideMenu()">
+   <div id="about-main">
+     <br><br>
+     
+     <div class="text-wrapper">
+	<h1>Hi! I'm Howard!</h1>
+	<p> <font size="4">
+        A <b>B.S. Computer Science</b> student at <b>UC San Diego</b>, expected to
+        finish in June, 2021. 
+        <br>
+        <br>
+        In the past, I have worked on projects related to Website Development, Embedded Systems programming, and Game Development.
+        <br>
+        <br>
+        I plan to work as a professional Software Engineer in the future and learn as much as I can about this amazing field!
+        </font> </p>
+     </div>
+     <div class="icon-row">
+	      <a href="http://github.com/hwanggit" class="fa fa-github-square fa-5x"></a>
+	      <a href="http://linkedin.com/in/hwangprof" class="fa fa-linkedin-square fa-5x"></a>
+     </div>
+   </div>
+
+  <div id="work-main">
+    <div class="text-wrapper">
+      <h2>Experience</h2>
+    </div>
+    
+    <div class= "work-items">
+     <div class="flipper">
+
+      <img src="experience/lumlogo.png"></img>
+      <div class="caption">
+          <p style="color:black; font-weight:900;margin-top:3%;">LUMINERVA</p>
+          <br><br><a href='https://apkpure.com/luminerva-guardians-of-minerva-test-version/comgreedyai.github.guardiansofminerva'>VISIT APP</a> <br><br><br>
+            <b>Luminerva</b> is an <b>educational gaming app</b> for students created with <b>Gradle</b>.
+            <br><br>1. <b>Prototyped new functionalities</b> for the app using <b>Java and JavaFx</b> as a sandbox.
+            <br><br>2. Made a <b>random problem generator</b> and programmed <b>Connect4</b>.
+            <br><br>3. Led a <b>project maintenance team</b> to test and debug code.
+            <br><br>Languages and Frameworks: <b>Java, JavaFx, Shell</b>.<br><br>
+        </div>
+     </div>
+    </div>
+    </div>
+
+    <div id="project-main">
+        <br>
+     <div class="text-wrapper">
+        <h1>Projects</h1>
+     </div>
+	 <div class= "project-items">
+          <div class="flipper">
+  
+           <img src="projects/acachoir.PNG"></img>
+           <div class="caption">
+              <p style="color:black; font-weight:900;margin-top:3%;">ACACHOIR.UCSD.EDU</p>
+              <br><br><a href='http://acachoir.ucsd.edu'>VISIT</a><br>
+              <br><br>
+              <b>UCSD A Cappella Choir website</b> created with <b>bootstrap, JQuery, and hosted on UCSD web server</b>:
+              <br><br>1. Used bootstrap to create a professional <b>UI/UX web layout</b> including event,<b> schedule, profile, FAQ and contact pages</b>.
+	      <br><br>2. Customized features to fit organization's <b>primary advertising</b> needs.
+	      <br><br>3. Implemented <b>interactive read-and-listen</b> webpage content to help members learn their song parts.
+              <br><br>Languages and Frameworks: <b>Bootstrap CSS/JS, JQuery</b>.<br><br>
+            </div>
+          </div>
+         </div>
+	
+     <div class= "project-items">
+        <div class="flipper">
+
+         <img src="projects/dldesign.png"></img>
+         <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">DL-DESIGN.NET </p>
+            <br><br><a href='https://www.dl-design.net'>VISIT</a> <br><br><br>
+            Commissioned by a friend to create her <b>Interior Design portfolio:</b>
+            <br><br>1. Integrated <b>UI features</b> such as <b>background parallax, Navbars, and more.</b>
+            <br><br>2. Integrated <b>mobile functionalities</b> such as <b>collapsible and draggable sidenav.</b>
+            <br><br>3. Created <b>fullscreen modal sliders</b> using <b>carousels and overlays</b>.
+            <br><br>Languages and Frameworks: <b>Materialize CSS/JS, JQuery</b>.<br><br>
+          </div>
+        </div>
+       </div>
+       <div class= "project-items">
+          <div class="flipper">
+  
+           <img src="projects/asrecords.png"></img>
+           <div class="caption">
+              <p style="color:black; font-weight:900;margin-top:3%;">AS RECORDS</p>
+              <br><br><a href='https://acsweb.ucsd.edu/~luw055'>VISIT</a><Br>
+              <br><br>
+              A <b>Simple Search Engine</b> in <b>HTML/CSS and JavaScript</b>:
+              <br><br>1. Used <b>HTML form input</b> and <b>JS/JQuery</b> to <b>parse div tags</b> for keywords.
+              <br><br>2. Created b<b>eautiful and simplistic UI</b> for searching, including <b>search modules</b>.
+              <br><br>3. Sourced search content from <b>database <br>documents</b> from <b>as.ucsd.edu</b>.
+              <br><br>Languages and Frameworks: <b>HTML/CSS, JavaScript, JQuery</b>.<br><br>
+            </div>
+          </div>
+         </div>
+       <div class= "project-items">
+          <div class="flipper">
+  
+           <img src="projects/lifewatch2.0/LifeWatch.png"></img>
+           <div class="caption">
+              <p style="color:black; font-weight:900;margin-top:3%;">LIFEWATCH 2.0</p>
+              <br><br><a href='https://devpost.com/software/lifewatch-v8qnh6'>DEVPOST</a><br>
+              <br><br>
+              <b>VR Lifeguard trainer</b> created with <b>Unity, SteamVR, and VIVE</b>:
+              <br><br>1. Created <b>VR UI/UX environment</b> using <b>Unity objects and packages</b>.
+              <br><br>2. <b>Programmed VIVE controller</b> and <b>Unity object functionalities in C#</b>.
+              <br><br>3. <b>Worked in team of 4</b> and submitted to <b>SD Hacks 2018</b>.
+              <br><br>Languages and Frameworks: <b>Unity, SteamVR API, VIVE, C#</b>.<br><br>
+            </div>
+          </div>
+         </div>
+
+           <div class= "project-items">
+              <div class="flipper">
+      
+               <img src="projects/hikinnect.png"></img>
+               <div class="caption">
+                  <p style="color:black; font-weight:900;margin-top:3%;">HI-KINECT</p>
+                  <br><br><a href='https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy'>VIEW</a><br>
+                  <br><br>
+                  <b>Hi-Kinect is a prototype Mobile Hiking app</b>:
+                  <br><br>1. Created <b>mock start-up</b> and <b>business plan</b> for <b>social hiking app</b>.
+                  <br><br>2. Drafted <b>prototype UI/UX features</b> for to-be mobile app.
+                  <br><br>3. Planned to integrate <b>Google Maps API</b> and the city's <b>Open Data Catalogue</b> to help hikers <b>navigate trails</b> with more awareness. 
+                  <br><br>4. Project won <b>3rd out of 20 Teams</b> at <b>Calgary's Mayor's Youth Council Hack-a-thon 2017</b>.
+                  <br><br>Languages and Frameworks: <b>Wix sites and Proto.io design software</b>.<br><br>
+                </div>
+              </div>
+             </div>
+             <div class= "project-items">
+                <div class="flipper">
+        
+                 <img src="projects/connect4.png"></img>
+                 <div class="caption">
+                    <p style="color:black; font-weight:900;margin-top:3%;">CONNECT4</p>
+                    <br><br><a href='videos/connect4.html'>DEMO</a><br>
+                    <br><br><b>Full Stack Connect4 Game:</b>
+                    <br><br>1. Programmed <b>front end/back end</b> using <b>JavaFx/Java</b>.
+	            <br><br>2. Implemented <b>Press N to Restart/Clear</b> game feature</b>.
+		    <br><br>3. Project from <b>Luminerva Inc</b> work experience.
+                    <br><br>Note: <b>OUTDATED JAVA 8 SDK REQUIRED</b><br><br>
+                  </div>
+                </div>
+               </div>
+               <div class= "project-items">
+                  <div class="flipper">
+          
+                   <img src="projects/2048.png"></img>
+                   <div class="caption">
+                      <p style="color:black; font-weight:900;margin-top:3%;">2048</p>
+                      <br><br><a href='videos/2048.html'>DEMO</a><br>
+                      <br><br><b>Full Stack 2048 Game:</b>
+                    <br><br>1. Programmed <b>front end/back end</b> using <b>JavaFx/Java</b>.
+	            <br><br>2. Implemented <b>Press N to Restart/Clear</b> game feature</b>.
+		    <br><br>3. Project from <b>CSE 8A</b> course at <b>UCSD</b>.
+                    <br><br>Note: <b>OUTDATED JAVA 8 SDK REQUIRED</b><br><br>
+                    </div>
+                  </div>
+                 </div>
+    </div>
+    <div id="education-main">
+        <div class="text-wrapper">
+           <h1>Education</h1>
+           <div class="slider-wrap-3">
+              <div class="me-slider-3" id="slider">
+                <div class="slideholder-3">
+                   <div class="slide-3" id="slide-2"></div>
+                </div>
+              </div> 
+            </div>
+        </div>
+        <div class="text-wrapper">
+            <p> <font size="4">
+                  <br><br>
+                  <b>Discipline</b> <br>Bachelor's of Science in Computer Science
+                  <br><br>
+                  <b>Courses</b> <br>CSE 8A/8B Introduction to Programming<br> CSE 12 Data Structures and Algorithms<br>CSE 15L Laboratory Techniques <br>CSE 20/21 Discrete Mathematics
+                  <br><br>
+                  <b>Graduation</b> <br>December 2020
+                  <br><br>
+                  <b>Major GPA</b> <br>3.6
+                  <br>
+                  </font> </p>
+               </div>
+
+    </div>
+    <br><br>
+    <footer>
+      <br>
+      <p><font size="6">Contacts</font></p>
+      <div class="icon-row-2">
+      <a href="tel:8584057271" class="fa fa-phone-square fa-5x"></a>
+      <a href="mailto:luw055@ucsd.edu" class="fa fa-envelope-square fa-5x"></a>
+      <a href="https://www.facebook.com/howard.wang.509" class="fa fa-facebook-square fa-5x"></a>
+      </div>
+      </footer>
+  </div>
+  <script>
+
+  $(document).ready(function(){
+    $("#navmenu li a").removeClass('active');
+    $(".flipper").animate({
+      "scrollTop": 0
+    }, 0);
+  });
+
+  $('#about, #about-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("body").offset().top},
+		    'fast');
+  }); 
+  $('#experience,#experience-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#work-main").offset().top},
+		    'fast');
+  }); 
+  $('#projects,#projects-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#project-main").offset().top},
+		    'fast');
+  }); 
+  $('#education,#education-2').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("#education-main").offset().top},
+		    'fast');
+  }); 
+
+  $('#contacts').click(function() {
+	      $('html,body').animate({
+		    scrollTop: $("footer").offset().top},
+		    'fast');
+  }); 
+  
+  $("#navmenu li a").click(function() {
+    $("#navmenu li a").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  <!--created navbar interactive functionality-->
+
+  $(function(){
+  $(window).scroll(function(){
+    $("#navmenu li a").removeClass('active');
+    var about=$("#work-main").offset().top;
+    var experience=$("#project-main").offset().top;
+    var projects=$("#education-main").offset().top;
+    var education=$("footer").offset().top;
+    if($(this).scrollTop()>=0&&$(this).scrollTop()<=about-300){
+        $("#about").addClass('active');
+    }
+    else if($(this).scrollTop()>about-300&&$(this).scrollTop()<=experience-300){
+        $("#experience").addClass('active');
+    }
+    else if($(this).scrollTop()>experience-300&&$(this).scrollTop()<=projects-300){
+        $("#projects").addClass('active');
+    }
+    else if($(this).scrollTop()>projects-300&&$(this).scrollTop()<=education){
+        $("#education").addClass('active');
+    }
+  });
+  });
+  $(".flipper").click(function () {
+    if ($(this).scrollTop()!=0) {
+      $(this).animate({
+      "scrollTop": 0
+      }, 500);
+    }
+    else {
+      var height=$(".flipper img").height();
+      $(this).animate({
+        "scrollTop": height
+      }, 500);
+    }
+  });
+  $(".flipper").mouseover(function () {
+    if ($(this).scrollTop()!=0) {
+      return;
+    }
+    var height=$(".flipper img").height();
+    $(this).animate({
+      "scrollTop": height
+    }, 500);
+  });
+  $(".flipper").mouseleave(function () {
+    if ($(this).scrollTop()==0) {
+      return;
+    }
+    $(this).animate({
+      "scrollTop": 0
+    }, 500);
+  });
+  </script>
+  <script src="js/init.js"></script>
+</body>
+</html>
