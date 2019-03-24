@@ -9,7 +9,7 @@ body{
 	max-width:100%;
 	overflow-x:hidden;
 	font-size:12px;
-    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+        background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
 	-moz-animation: 10s linear 0s normal none infinite animate;
 	-ms-animation: 10s linear 0s normal none infinite animate;
@@ -49,13 +49,13 @@ body{
 	display:inline-block;
 }
 
-footer {
-	background-color:#FF8B24;
-	height:0;
-	width:0;
-	visibility:hidden;
-	margin:auto;
-	bottom:0;
+.footer {
+	text-align:center;
+	width:100%;
+	font-size:15px;
+	color:white;
+	margin:50px auto;
+	bottom:1px;
 }
 h1{
 	position:center;
@@ -80,19 +80,43 @@ h2{
 	width:60%;
 	margin:auto;
 }
+
 #citations {
-	margin-top: 50px;	
+	width:70%;
+	margin:auto;
+	margin-top: 80px;	
+}
+
+#citations b{
+	font-style:italic;
 }
 
 #citations p{
+  font-size:17px;
+  color:white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  
   /*letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 8s steps(100, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+#citations h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(60, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+#citations a{
+	font-style:none;
+	font-size:20px;
+	text-decoration:none;
 }
 
 /* The typing effect */
