@@ -43,6 +43,12 @@ body{
 	to {background-position: 500px 0;}
 }
 
+.divider {
+	width:5px;
+	height:auto;
+	display:inline-block;
+}
+
 footer {
 	background-color:#FF8B24;
 	height:0;
