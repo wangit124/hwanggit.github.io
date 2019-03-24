@@ -393,6 +393,15 @@ button {
 	font-weight:10000;
 }
 
+#research-main {
+	position:center;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	margin: 50px auto;
+	transition:0.5s;
+}
+
 #projects-main {
 	position:center;
 	overflow:hidden;
