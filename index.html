@@ -87,7 +87,7 @@
       <div class="text-wrapper">
         <h1>Projects</h1>
       </div>
-	    
+
       <div class="project-items">
         <div class="flipper">
           <img src="projects/easytour.png"></img>
@@ -97,16 +97,17 @@
             <div class="divider"></div>
             <a href='https://github.com/hwanggit/Easy-Tour'>CODE</a><br>
             <br><br>
-	    Developed an <b>AI web app</b> for Tourism that maps out your trip for you:
-  	    <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b>
-	    <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b>
+            Developed an <b>AI web app</b> for Tourism that maps out your trip for you:
+            <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b>
+            <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b>
             to correct resting tremor symptoms.
- 	    <br><br>3. Rendered <b>3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>.
-            <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API</b>.<br><br>
+            <br><br>3. Rendered <b>3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>.
+            <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox
+              API</b>.<br><br>
           </div>
         </div>
       </div>
-	
+
       <div class="project-items">
         <div class="flipper">
           <img src="projects/Pipe.png"></img>
@@ -269,237 +270,238 @@
     <div id="citations">
       <p>Wang, H. <a href="research/QP_19_Project.pdf"><b>Pi for Parkinson's Effort</b></a>. IEEE Quarterly Projects
         Competition Documentation (2019).<br><br></p>
-      <p>Wang, H. <a href="research/The Brachistochrone.pdf"><b>The Brachistochrone</b></a>. International Baccalaureate 
-	Internal Assessment Mathematics 1–19 (2017).<br><br></p>
+      <p>Wang, H. <a href="research/The Brachistochrone.pdf"><b>The Brachistochrone</b></a>. International Baccalaureate
+        Internal Assessment Mathematics 1–19 (2017).<br><br></p>
       <p>Wang, H. <a href="research/Age of Quaternions.pdf"><b>Age of Quaternions</b></a>. International Baccalaureate
         Extended Essay 1–17 (2017).<br><br></p>
       <p>Wang, H. <a href="research/Bungee Jumping and Maximum Return Velocity.pdf"><b>Bungee Jumping and Maximum Return
             Velocity</b></a>. International Baccalaureate Internal Assessment Physics 1–14 (2017).<br><br></p>
       <p>Wang, H. <a href="research/Effects of electronegativity on Cell potential.pdf"><b>Effects of Electronegativity
-            on Cell Potential</b></a>. International Baccalaureate Internal Assessment Chemistry 1–13 (2017).<br><br></p>
+            on Cell Potential</b></a>. International Baccalaureate Internal Assessment Chemistry 1–13 (2017).<br><br>
+      </p>
       <p>See Notebook and Analysis <a href="cycloid.html"><b>Here</b></a><br><br></p>
     </div>
   </div>
 
   <div class="footer"> &#9400 HW 2019</div>
-      <script>
-        var timeOut;
+  <script>
+    var timeOut;
 
-        class Item {
-          constructor(icon, backgroundColor, url) {
-            this.$element = $(document.createElement("div"));
-            this.icon = icon;
-            this.$element.addClass("item");
-            this.$element.css("background-color", backgroundColor);
-            var i = document.createElement("i");
-            $(i).addClass("fi-" + icon);
-            this.$element.append(i);
-            this.prev = null;
-            this.next = null;
-            this.isMoving = false;
-            var element = this;
-            if (url != null) {
-              this.$element.click(function () {
-                window.location = url;
-              });
-            }
-            this.$element.on("mousemove", function () {
-              clearTimeout(timeOut);
-              timeOut = setTimeout(function () {
-                if (element.next && element.isMoving) {
-                  element.next.moveTo(element);
-                }
-              }, 10);
-            });
-          }
-
-          moveTo(item) {
-            anime({
-              targets: this.$element[0],
-              left: item.$element.css("left"),
-              top: item.$element.css("top"),
-              duration: 700,
-              elasticity: 500
-            });
-            if (this.next) {
-              this.next.moveTo(item);
-            }
-          }
-
-          updatePosition() {
-            anime({
-              targets: this.$element[0],
-              left: this.prev.$element.css("left"),
-              top: this.prev.$element.css("top"),
-              duration: 200
-            });
-
-            if (this.next) {
-              this.next.updatePosition();
-            }
-          }
-        }
-
-        class Menu {
-          constructor(menu) {
-            this.$element = $(menu);
-            this.size = 0;
-            this.first = null;
-            this.last = null;
-            this.timeOut = null;
-            this.hasMoved = false;
-            this.status = "closed";
-          }
-
-          add(item) {
-            var menu = this;
-            if (this.first == null) {
-              this.first = item;
-              this.last = item;
-              this.first.$element.on("mouseup", function () {
-                if (menu.first.isMoving) {
-                  menu.first.isMoving = false;
-                } else {
-                  menu.click();
-                }
-              });
-              item.$element.draggable(
-                {
-                  start: function () {
-                    menu.close();
-                    item.isMoving = true;
-                  }
-                },
-                {
-                  drag: function () {
-                    if (item.next) {
-                      item.next.updatePosition();
-                    }
-                  }
-                },
-                {
-                  stop: function () {
-                    item.isMoving = false;
-                    item.next.moveTo(item);
-                  }
-                }
-              );
-            } else {
-              this.last.next = item;
-              item.prev = this.last;
-              this.last = item;
-            }
-            this.$element.after(item.$element);
-
-
-          }
-
-          open() {
-            this.status = "open";
-            var current = this.first.next;
-            var iterator = 1;
-            var head = this.first;
-            var sens = head.$element.css("left") < 10 ? 1 : -1;
-            while (current != null) {
-              anime({
-                targets: current.$element[0],
-                left: parseInt(head.$element.css("left"), 10) + (sens * (iterator * 65)),
-                top: head.$element.css("top"),
-                duration: 500
-              });
-              iterator++;
-              current = current.next;
-            }
-          }
-
-          close() {
-            this.status = "closed";
-            var current = this.first.next;
-            var head = this.first;
-            var iterator = 1;
-            while (current != null) {
-              anime({
-                targets: current.$element[0],
-                left: head.$element.css("left"),
-                top: head.$element.css("top"),
-                duration: 500
-              });
-              iterator++;
-              current = current.next;
-            }
-          }
-
-          click() {
-            if (this.status == "closed") {
-              this.open();
-            } else {
-              this.close();
-            }
-          }
-
-        }
-
-        var menu = new Menu("#myMenu");
-        var item1 = new Item("link", "#fff");
-        var item2 = new Item("page-csv", "#FFF15C", "resumes/howard_wang_resume.pdf");
-        var item3 = new Item("social-github", "#FF5C5C", "https://www.github.com/hwanggit");
-        var item4 = new Item("social-facebook", "#5CD1FF", "https://www.facebook.com/howard.wang.509");
-        var item5 = new Item("social-linkedin", "#64F592", "https://www.linkedin.com/in/hwangprof");
-
-        menu.add(item1);
-        menu.add(item2);
-        menu.add(item3);
-        menu.add(item4);
-        menu.add(item5);
-        $(document).delay(50).queue(function (next) {
-          menu.open();
-          next();
-          $(document).delay(1000).queue(function (next) {
-            menu.close();
-            next();
+    class Item {
+      constructor(icon, backgroundColor, url) {
+        this.$element = $(document.createElement("div"));
+        this.icon = icon;
+        this.$element.addClass("item");
+        this.$element.css("background-color", backgroundColor);
+        var i = document.createElement("i");
+        $(i).addClass("fi-" + icon);
+        this.$element.append(i);
+        this.prev = null;
+        this.next = null;
+        this.isMoving = false;
+        var element = this;
+        if (url != null) {
+          this.$element.click(function () {
+            window.location = url;
           });
+        }
+        this.$element.on("mousemove", function () {
+          clearTimeout(timeOut);
+          timeOut = setTimeout(function () {
+            if (element.next && element.isMoving) {
+              element.next.moveTo(element);
+            }
+          }, 10);
+        });
+      }
+
+      moveTo(item) {
+        anime({
+          targets: this.$element[0],
+          left: item.$element.css("left"),
+          top: item.$element.css("top"),
+          duration: 700,
+          elasticity: 500
+        });
+        if (this.next) {
+          this.next.moveTo(item);
+        }
+      }
+
+      updatePosition() {
+        anime({
+          targets: this.$element[0],
+          left: this.prev.$element.css("left"),
+          top: this.prev.$element.css("top"),
+          duration: 200
         });
 
-      </script>
-      <script>
-        $(document).ready(function () {
-          $("#navmenu li a").removeClass('active');
-          $(".flipper").animate({
-            "scrollTop": 0
-          }, 0);
-        });
+        if (this.next) {
+          this.next.updatePosition();
+        }
+      }
+    }
 
-        $(".flipper").click(function () {
-          if ($(this).scrollTop() != 0) {
-            $(this).animate({
-              "scrollTop": 0
-            }, 500);
-          }
-          else {
-            var height = $(".flipper img").height();
-            $(this).animate({
-              "scrollTop": height
-            }, 500);
-          }
-        });
-        $(".flipper").mouseover(function () {
-          if ($(this).scrollTop() != 0) {
-            return;
-          }
-          var height = $(".flipper img").height();
-          $(this).animate({
-            "scrollTop": height
-          }, 500);
-        });
-        $(".flipper").mouseleave(function () {
-          if ($(this).scrollTop() == 0) {
-            return;
-          }
-          $(this).animate({
-            "scrollTop": 0
-          }, 500);
-        });
-      </script>
+    class Menu {
+      constructor(menu) {
+        this.$element = $(menu);
+        this.size = 0;
+        this.first = null;
+        this.last = null;
+        this.timeOut = null;
+        this.hasMoved = false;
+        this.status = "closed";
+      }
+
+      add(item) {
+        var menu = this;
+        if (this.first == null) {
+          this.first = item;
+          this.last = item;
+          this.first.$element.on("mouseup", function () {
+            if (menu.first.isMoving) {
+              menu.first.isMoving = false;
+            } else {
+              menu.click();
+            }
+          });
+          item.$element.draggable(
+            {
+              start: function () {
+                menu.close();
+                item.isMoving = true;
+              }
+            },
+            {
+              drag: function () {
+                if (item.next) {
+                  item.next.updatePosition();
+                }
+              }
+            },
+            {
+              stop: function () {
+                item.isMoving = false;
+                item.next.moveTo(item);
+              }
+            }
+          );
+        } else {
+          this.last.next = item;
+          item.prev = this.last;
+          this.last = item;
+        }
+        this.$element.after(item.$element);
+
+
+      }
+
+      open() {
+        this.status = "open";
+        var current = this.first.next;
+        var iterator = 1;
+        var head = this.first;
+        var sens = head.$element.css("left") < 10 ? 1 : -1;
+        while (current != null) {
+          anime({
+            targets: current.$element[0],
+            left: parseInt(head.$element.css("left"), 10) + (sens * (iterator * 65)),
+            top: head.$element.css("top"),
+            duration: 500
+          });
+          iterator++;
+          current = current.next;
+        }
+      }
+
+      close() {
+        this.status = "closed";
+        var current = this.first.next;
+        var head = this.first;
+        var iterator = 1;
+        while (current != null) {
+          anime({
+            targets: current.$element[0],
+            left: head.$element.css("left"),
+            top: head.$element.css("top"),
+            duration: 500
+          });
+          iterator++;
+          current = current.next;
+        }
+      }
+
+      click() {
+        if (this.status == "closed") {
+          this.open();
+        } else {
+          this.close();
+        }
+      }
+
+    }
+
+    var menu = new Menu("#myMenu");
+    var item1 = new Item("link", "#fff");
+    var item2 = new Item("page-csv", "#FFF15C", "resumes/howard_wang_resume.pdf");
+    var item3 = new Item("social-github", "#FF5C5C", "https://www.github.com/hwanggit");
+    var item4 = new Item("social-facebook", "#5CD1FF", "https://www.facebook.com/howard.wang.509");
+    var item5 = new Item("social-linkedin", "#64F592", "https://www.linkedin.com/in/hwangprof");
+
+    menu.add(item1);
+    menu.add(item2);
+    menu.add(item3);
+    menu.add(item4);
+    menu.add(item5);
+    $(document).delay(50).queue(function (next) {
+      menu.open();
+      next();
+      $(document).delay(1000).queue(function (next) {
+        menu.close();
+        next();
+      });
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#navmenu li a").removeClass('active');
+      $(".flipper").animate({
+        "scrollTop": 0
+      }, 0);
+    });
+
+    $(".flipper").click(function () {
+      if ($(this).scrollTop() != 0) {
+        $(this).animate({
+          "scrollTop": 0
+        }, 500);
+      }
+      else {
+        var height = $(".flipper img").height();
+        $(this).animate({
+          "scrollTop": height
+        }, 500);
+      }
+    });
+    $(".flipper").mouseover(function () {
+      if ($(this).scrollTop() != 0) {
+        return;
+      }
+      var height = $(".flipper img").height();
+      $(this).animate({
+        "scrollTop": height
+      }, 500);
+    });
+    $(".flipper").mouseleave(function () {
+      if ($(this).scrollTop() == 0) {
+        return;
+      }
+      $(this).animate({
+        "scrollTop": 0
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>
