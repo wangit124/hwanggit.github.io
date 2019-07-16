@@ -1,0 +1,1216 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Libre+Franklin');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+	background-color: #fff;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-size: 12px;
+	background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+
+}
+
+@-webkit-keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 500px 0;
+	}
+}
+
+@-moz-keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 500px 0;
+	}
+}
+
+@-ms-keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 500px 0;
+	}
+}
+
+@-o-keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 500px 0;
+	}
+}
+
+@keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 500px 0;
+	}
+}
+
+
+.divider {
+	width: 5px;
+	height: auto;
+	display: inline-block;
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	color: white;
+	margin: 50px auto;
+	bottom: 1px;
+}
+
+h1 {
+	position: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #FFF;
+	font-size: 60px;
+	font-weight: 900;
+}
+
+h2 {
+	position: relative;
+	margin: 40px 0 40px 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 60px;
+	font-weight: 900;
+}
+
+.text-wrapper {
+	width: 60%;
+	margin: auto;
+}
+
+#citations {
+	width: 70%;
+	margin: auto;
+	margin-top: 80px;
+}
+
+#citations b {
+	font-style: italic;
+}
+
+#citations p {
+	font-size: 17px;
+	color: white;
+}
+
+#citations a {
+	font-style: none;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+	from, to {
+		border-color: transparent
+	}
+	50% {
+		border-color: white;
+	}
+}
+
+}
+
+p {
+	position: center;
+	color: #FFF;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+
+b {
+	color: #67F2FF;
+	font-weight: 900;
+}
+
+.icon-row {
+	padding-top: 40px;
+	text-align: center;
+	position: center;
+}
+
+.icon-row a {
+	color: #FFF;
+}
+
+.icon-row a:hover {
+	color: #67F2FF;
+	transition: 0.5s;
+}
+
+.icon-row-2 {
+	padding-top: 10px;
+	text-align: center;
+	position: center;
+}
+
+.icon-row-2 a {
+	margin: 5px;
+	color: #FFF;
+}
+
+.icon-row-2 a:hover {
+	color: #993630;
+	transition: 0.5s;
+}
+
+.navbar {
+	z-index: 1000;
+	background-color: #FF8B24;
+	-webkit-box-shadow: 0 0px 0px 1px black;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 180px;
+	padding-top: 65px;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.navbar a {
+	float: left;
+	width: 100%;
+	color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navbar-nav li span a {
+	float: left;
+	width: 33%;
+	color: #FFF;
+	padding: 15px 0.3px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.open-slide a {
+	padding: 12px 10px;
+	width: auto;
+	margin: auto;
+	position: fixed;
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+.navbar ul {
+	text-align: center;
+	margin: 0;
+	padding-left: 0;
+	width: 100%;
+	list-style: none;
+}
+
+.navbar a:hover {
+	background-color: #993630;
+	color: #FFF;
+	transition: 0.5s;
+}
+
+.side-nav {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0.95;
+	overflow: hidden;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.side-nav a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ccc;
+	display: block;
+	transition: 0s;
+}
+
+.side-nav a:hover {
+	color: #67F2FF;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 150px;
+}
+
+#about-main {
+	z-index: 0;
+	position: center;
+	overflow: hidden;
+	margin: 50px auto;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.slider-wrap {
+	border-radius: 50%;
+	border: 6px solid #FFF;
+	height: 240px;
+	width: 240px;
+	margin: auto;
+	position: center;
+}
+
+.me-slider {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.slideholder {
+	width: 100%;
+}
+
+.slide {
+	float: left;
+	width: 240px;
+	height: 240px;
+	background-position: center;
+}
+
+.slider-wrap-2 {
+	border-radius: 50%;
+	border: 5px solid #FFF;
+	height: 135px;
+	width: 135px;
+	margin: 10px auto;
+	position: center;
+}
+
+.me-slider-2 {
+	border-radius: 50%;
+	overflow-x: scroll;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.slideholder-2 {
+	width: 200%;
+	overflow: hidden;
+}
+
+.slide-2 {
+	float: left;
+	width: 135px;
+	height: 135px;
+	background-position-y: -30px;
+	background-position-x: center;
+}
+
+.slide-3 {
+	height: 240px;
+	width: 240px;
+	background-position-y: -5.8px;
+	background-position-x: center;
+}
+
+.slider-wrap-3 {
+	border-radius: 50%;
+	-webkit-box-shadow: 0 3px 0px 1px black;
+	border: 0px solid #FFF;
+	height: 240px;
+	width: 240px;
+	margin: auto;
+	position: center;
+}
+
+.me-slider-3 {
+	border-radius: 50%;
+	overflow-x: scroll;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.slideholder-3 {
+	width: 200%;
+	overflow: hidden;
+}
+
+#slide-0 {
+	background-image: url('../images/header-image/myportrait4.png');
+}
+
+#slide-1 {
+	background-image: url('../images/header-image/myportrait2.png');
+}
+
+#slide-2 {
+	background-image: url('../images/myucsd.png');
+	background-size: 268px;
+}
+
+#work-main {
+	z-index: 0;
+	position: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	transition: 0.5s;
+}
+
+#work-main .fade {
+	height: 150px;
+}
+
+#project-main .fade {
+	height: 150px;
+}
+
+.work-items {
+	z-index: 1;
+	padding-bottom: 30px;
+	height: 70vw;
+	width: 100%;
+}
+
+button {
+	background-color: #67F2FF;
+	/* Green */
+	-webkit-box-shadow: 0px 0.5px 0.5px 0px black;
+	border: none;
+	color: white;
+	margin-top: 8px;
+	padding: 10px 21px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.flipper {
+	-webkit-box-shadow: 0px 2px 1px 0px black;
+	background-color: #FFF;
+	border-radius: 3%;
+	margin: auto;
+	height: 72vw;
+	width: 85vw;
+	overflow-x: hidden;
+}
+
+.flipper img {
+	width: 100%;
+	height: 87%;
+	transition: 0.5s;
+}
+
+.caption {
+	width: 80%;
+	margin: auto;
+	position: center;
+	text-align: center;
+	color: black;
+}
+
+.caption a {
+	color: white;
+	-webkit-box-shadow: 0px 1px 3px 0px black;
+	padding: 12px 18px;
+	background-color: #993630;
+	text-decoration: none;
+}
+
+.caption a:hover {
+	-webkit-box-shadow: inset 0 0 0px black;
+}
+
+.caption b {
+	color: #993630;
+	font-weight: 10000;
+}
+
+#research-main {
+	position: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 50px auto;
+	transition: 0.5s;
+}
+
+#projects-main {
+	position: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 50px auto;
+	transition: 0.5s;
+}
+
+.project-items {
+	margin: auto;
+	padding-bottom: 80px;
+	width: 100%;
+	float: left;
+}
+
+#education-main {
+	z-index: 0;
+	position: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.fade p {
+	font-size: 20px;
+	float: center;
+	color: white;
+}
+
+@media(max-width:730px) {
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	.item {
+		height: 40px;
+		width: 40px;
+	}
+	.fade p {
+		font-size: 18px;
+		float: center;
+		color: white;
+	}
+	i {
+		font-size: 40px;
+		color: black;
+	}
+	footer {
+		visibility: visible;
+		height: 250px;
+		width: 100%;
+	}
+	.navbar-nav {
+		display: none;
+	}
+	.navbar {
+		z-index: 1000;
+		background-color: #FF8B24;
+		-webkit-box-shadow: 0 0px 0.5px 1px black;
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		padding-top: 0;
+		overflow: hidden;
+		height: 61px;
+	}
+	.navbar a {
+		display: inline-block;
+		color: #FFF;
+		padding: 19px 26px 17px;
+		text-decoration: none;
+		font-size: 19px;
+	}
+	.slide {
+		float: left;
+		width: 240px;
+		height: 240px;
+		background-position: center;
+	}
+	.slideholder:hover .slide {
+		transform: none;
+	}
+	.text-wrapper {
+		width: 95%;
+		margin: auto;
+	}
+}
+
+@media(min-width:730px) {
+	.flipper {
+		-webkit-box-shadow: 0px 2px 1px 0px black;
+		background-color: #FFF;
+		z-index: 5;
+		margin: auto;
+		height: 55vw;
+		width: 65vw;
+		overflow-x: hidden;
+	}
+	.caption p {
+		margin-top: 5%;
+	}
+	.work-items {
+		z-index: 1;
+		padding: 30px;
+		padding-left: 0;
+		height: 55vw;
+		width: 100%;
+	}
+	.project-items {
+		z-index: 1;
+		padding: 30px;
+		padding-left: 0;
+		height: 55vw;
+		width: 100%;
+	}
+	.open-slide {
+		display: none
+	}
+	.desktop-only {
+		display: block !important;
+	}
+	.mobile-only {
+		display: none !important;
+	}
+}
+
+@media(min-width:1000px) {
+	.flipper {
+		-webkit-box-shadow: 0px 2px 1px 0px black;
+		background-color: #FFF;
+		z-index: 5;
+		margin: none;
+		height: 30vw;
+		width: 35vw;
+		overflow-x: hidden;
+	}
+	.work-items {
+		display: inline-block;
+		text-align: center;
+		margin: none;
+		z-index: 1;
+		height: 30vw;
+		width: 100vw;
+	}
+	.project-items {
+		text-align: center;
+		padding-left: 11.8%;
+		margin: none;
+		z-index: 1;
+		height: 30vw;
+		width: 25vw;
+	}
+}
+
+@media(min-width:1190px) {
+	.project-items {
+		padding-left: 12.2%;
+	}
+}
+
+.active {
+	background-color: #993630;
+	color: #FFF;
+}
+
+.center {
+	position: absolute;
+	margin-right: 5%;
+	margin-top: 50px;
+}
+
+.menu {
+	z-index: 9999;
+	position: fixed;
+	width: 60px;
+	height: 20%;
+	top: 0;
+	right: 0;
+}
+
+.item {
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-moz-box-shadow: 0px 2px 3px 1px #444;
+	-webkit-box-shadow: 0px 2px 3px 1px #444;
+	box-shadow: 0px 2px 3px 1px #444;
+	cursor: pointer;
+	text-align: center;
+}
+
+.about-text {
+	margin-top: 380px;
+	width: 100%;
+	text-align: center;
+}
+
+.fade {
+	height: 80px;
+	margin-top: 50px;
+	padding: 10px;
+	opacity: 0;
+	top: 100px;
+}
+
+.caption p {
+	color: black;
+	font-weight: 900;
+	font-size: 17px;
+	margin-top: 3%;
+	padding-bottom: 10px;
+}
+
+i {
+	font-size: 40px;
+	color: black;
+}
+
+  <!--  <div class="center menu">
+    <div id="myMenu"></div>
+  </div>-->
+
+<!--
+  <div class="container">
+    <div class="fade">
+      <div class="slider-wrap">
+        <div class="me-slider" id="slider">
+          <div class="slideholder">
+            <div class="slide" id="slide-0"></div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <h1>I'm Howard,</h1>
+    </div>
+  </div>
+  <div class="about-text">
+    <div class="text-wrapper">
+      <div class="fade">
+        <p>A <b>B.S. Computer Science</b> student at <b>UC San Diego</b>, expected to
+          finish in June, 2021. </p>
+      </div>
+      <div class="fade">
+        <p>
+          In the past, I have worked on projects related to <b>Website Development</b>, <b>Embedded Systems</b>
+          programming, and <b>Game Development</b>.
+        </p>
+      </div>
+      <br><br>
+      <div class="fade">
+        <p>
+          I plan to work as a professional <b>Software Engineer</b> in the future and learn as much as I can about this
+          amazing field!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="work-main">
+
+    <div class="fade">
+      <div class="text-wrapper">
+        <h2>Experience</h2>
+      </div>
+    </div>
+    <div class="work-items">
+      <div class="flipper">
+        <img src="experience/lumlogo.png"></img>
+        <div class="caption">
+          <p style="color:black; font-weight:900;margin-top:3%;">LUMINERVA</p>
+          <br><br><a
+            href='https://apkpure.com/luminerva-guardians-of-minerva-test-version/comgreedyai.github.guardiansofminerva'>VISIT
+            APP</a> <br><br><br>
+          <b>Luminerva</b> is an <b>android educational gaming app</b> created for students.
+          <br><br>1. <b>Prototyped new functionalities</b> for the app using <b>Java and JavaFx</b> as a sandbox.
+          <br><br>2. Made a <b>random problem generator</b> and programmed <b>Connect4</b>.
+          <br><br>3. Led a <b>project maintenance team</b> to test and debug code.
+          <br><br>Languages and Frameworks: <b>Java, JavaFx, Shell</b>.<br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-main">
+    <div class="fade">
+      <div class="text-wrapper">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="project-items">
+        <div class="flipper">
+          <img src="projects/easytour.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">Easy Tour</p>
+            <br><br><a href='https://easy-tour-2019.herokuapp.com/'>VISIT</a>
+            <div class="divider"></div>
+            <a href='https://github.com/hwanggit/Easy-Tour'>CODE</a><br>
+            <br><br>
+            Developed an <b>AI web app</b> for Tourism that maps out your trip for you:
+            <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b>
+            <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b>
+            to correct resting tremor symptoms.
+            <br><br>3. Rendered <b>3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>.
+            <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox
+              API</b>.<br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-items">
+        <div class="flipper">
+          <img src="projects/Pipe.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">Pi for Parkinson's</p>
+            <br><br><a href='http://acsweb.ucsd.edu/~luw055/'>VISIT</a>
+            <div class="divider"></div>
+            <a href='https://github.com/hwanggit/Pi-for-Parkinson-s'>CODE</a><br>
+            <br><br>
+            <b>Assistive Medical IoT Device and Software</b> for Parkinson's Patients</b>:
+            <br><br>1. Led a <b>team of 3</b> to create a medically assistive IoT device for Parkinson's Patients.
+            <br><br>2. Using <b>Raspberry Pi, IMU, and servo</b> technology, read live data using <b>python</b> program
+            to correct resting tremor symptoms.
+            <br><br>3. Developed beautiful <b>front end dashboard</b> to chart live <b>Firebase</b> data.
+            <br><br>Languages and Frameworks: <b>JQuery, Chart.js, Firebase, Python</b>.<br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-items">
+        <div class="flipper">
+          <img src="projects/acachoir.PNG"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">UCSD A Cappella Choir</p>
+            <br><br><a href='http://acachoir.ucsd.edu'>VISIT</a>
+            <div class="divider"></div>
+            <a href='https://github.com/hwanggit/acachoir.ucsd.edu'>CODE</a><br>
+            <br><br>
+            <b>UCSD A Cappella Choir website</b> created with <b>bootstrap, JQuery, and hosted on UCSD web server</b>:
+            <br><br>1. Used bootstrap to create a professional <b>UI/UX web layout</b> including event,<b> schedule,
+              profile, FAQ and contact pages</b>.
+            <br><br>2. Customized features to fit organization's <b>primary advertising</b> needs.
+            <br><br>3. Implemented <b>interactive read-and-listen</b> webpage content to help members learn their song
+            parts.
+            <br><br>Languages and Frameworks: <b>Bootstrap CSS/JS, JQuery</b>.<br><br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="fade">
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/dldesign.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">Interior Designer Portfolio </p>
+            <br><br><a href='https://www.dl-design.net'>VISIT</a>
+            <div class="divider"></div>
+            <a href='https://github.com/hwanggit/dl-design.net'>CODE</a><br><br><br>
+            Commissioned by a friend to create her <b>Interior Design portfolio:</b>
+            <br><br>1. Integrated <b>UI features</b> such as <b>background parallax, Navbars, and more.</b>
+            <br><br>2. Integrated <b>mobile functionalities</b> such as <b>collapsible and draggable sidenav.</b>
+            <br><br>3. Created <b>fullscreen modal sliders</b> using <b>carousels and overlays</b>.
+            <br><br>Languages and Frameworks: <b>Materialize CSS/JS, JQuery</b>.<br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/hikinnect.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">Hi-Kinect</p>
+            <br><br><a
+              href='https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy'>VIEW</a><br>
+            <br><br>
+            <b>Hi-Kinect is a prototype Mobile Hiking app</b>:
+            <br><br>1. Created <b>mock start-up</b> and <b>business plan</b> for <b>social hiking app</b>.
+            <br><br>2. Drafted <b>prototype UI/UX features</b> for to-be mobile app.
+            <br><br>3. Planned to integrate <b>Google Maps API</b> and the city's <b>Open Data Catalogue</b> to help
+            hikers <b>navigate trails</b> with more awareness.
+            <br><br>4. Placed <b>3rd out of 25 Teams</b> and won $250 at <b>Calgary's Mayor's Youth Council Hack-a-thon
+              2017</b>.
+            <br><br>Languages and Frameworks: <b>Wix sites and Proto.io design software</b>.<br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade">
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/lifewatch2.0/LifeWatch.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">LifeWatch 2.0</p>
+            <br><br><a href='https://devpost.com/software/lifewatch-v8qnh6'>DEVPOST</a>
+            <div class="divider"></div>
+            <a href='https://github.com/hwanggit/LifeWatch2.0'>CODE</a><br>
+            <br><br>
+            <b>VR Lifeguard trainer</b> created with <b>Unity, SteamVR, and VIVE</b>:
+            <br><br>1. Created <b>VR UI/UX environment</b> using <b>Unity objects and packages</b>.
+            <br><br>2. <b>Programmed VIVE controller</b> and <b>Unity object functionalities in C#</b>.
+            <br><br>3. <b>Worked in team of 4</b> and submitted to <b>SD Hacks 2018</b>.
+            <br><br>Languages and Frameworks: <b>Unity, SteamVR API, VIVE, C#</b>.<br><br>
+          </div>
+        </div>
+      </div>
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/asrecords.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">AS Records</p>
+            <br><br><a href="https://github.com/hwanggit/AS-Records">CODE</a><br>
+            <br><br>
+            A <b>Simple Search Engine</b> in <b>HTML/CSS and JavaScript</b>:
+            <br><br>1. Used <b>HTML form input</b> and <b>JS/JQuery</b> to <b>parse div tags</b> for keywords.
+            <br><br>2. Created b<b>eautiful and simplistic UI</b> for searching, including <b>search modules</b>.
+            <br><br>3. Sourced search content from <b>database <br>documents</b> from <b>as.ucsd.edu</b>.
+            <br><br>Languages and Frameworks: <b>HTML/CSS, JavaScript, JQuery</b>.<br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade">
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/connect4.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">Connect 4</p>
+            <br><br><a href='videos/connect4.html'>DEMO</a>
+            <div class="divider"></div>
+            <a href='https://www.github.com/hwanggit/Connect-4'>CODE</a><br>
+            <br><br><b>Full Stack Connect4 Game:</b>
+            <br><br>1. Programmed <b>front end/back end</b> using <b>JavaFx/Java</b>.
+            <br><br>2. Implemented <b>Press N to Restart/Clear</b> game feature</b>.
+            <br><br>3. Project from <b>Luminerva Inc</b> work experience.
+            <br><br>Note: <b>OUTDATED JAVA 8 SDK REQUIRED</b><br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-items">
+        <div class="flipper">
+
+          <img src="projects/2048.png"></img>
+          <div class="caption">
+            <p style="color:black; font-weight:900;margin-top:3%;">2048</p>
+            <br><br><a href='videos/2048.html'>DEMO</a><br>
+            <br><br><b>Full Stack 2048 Game:</b>
+            <br><br>1. Programmed <b>front end/back end</b> using <b>JavaFx/Java</b>.
+            <br><br>2. Implemented <b>Press N to Restart/Clear</b> game feature</b>.
+            <br><br>3. Project from <b>CSE 8A</b> course at <b>UCSD</b>.
+            <br><br>Note: <b>OUTDATED JAVA 8 SDK REQUIRED</b><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="research-main">
+    <div class="text-wrapper">
+      <div id="citations">
+        <h1>Research</h1>
+      </div>
+    </div>
+    <div id="citations">
+      <p>Wang, H. <a href="research/QP_19_Project.pdf"><b>Pi for Parkinson's Effort</b></a>. IEEE Quarterly Projects
+        Competition Documentation (2019).<br><br></p>
+      <p>Wang, H. <a href="research/The Brachistochrone.pdf"><b>The Brachistochrone</b></a>. International Baccalaureate
+        Internal Assessment Mathematics 1–19 (2017).<br><br></p>
+      <p>Wang, H. <a href="research/Age of Quaternions.pdf"><b>Age of Quaternions</b></a>. International Baccalaureate
+        Extended Essay 1–17 (2017).<br><br></p>
+      <p>Wang, H. <a href="research/Bungee Jumping and Maximum Return Velocity.pdf"><b>Bungee Jumping and Maximum Return
+            Velocity</b></a>. International Baccalaureate Internal Assessment Physics 1–14 (2017).<br><br></p>
+      <p>Wang, H. <a href="research/Effects of electronegativity on Cell potential.pdf"><b>Effects of Electronegativity
+            on Cell Potential</b></a>. International Baccalaureate Internal Assessment Chemistry 1–13 (2017).<br><br>
+      </p>
+      <p>See Notebook and Analysis <a href="cycloid.html"><b>Here</b></a><br><br></p>
+    </div>
+  </div>
+
+  <div class="footer"> &#9400 HW 2019</div>
+  <script>
+    var timeOut;
+
+    class Item {
+      constructor(icon, backgroundColor, url) {
+        this.$element = $(document.createElement("div"));
+        this.icon = icon;
+        this.$element.addClass("item");
+        this.$element.css("background-color", backgroundColor);
+        var i = document.createElement("i");
+        $(i).addClass("fi-" + icon);
+        this.$element.append(i);
+        this.prev = null;
+        this.next = null;
+        this.isMoving = false;
+        var element = this;
+        if (url != null) {
+          this.$element.click(function () {
+            window.location = url;
+          });
+        }
+        this.$element.on("mousemove", function () {
+          clearTimeout(timeOut);
+          timeOut = setTimeout(function () {
+            if (element.next && element.isMoving) {
+              element.next.moveTo(element);
+            }
+          }, 10);
+        });
+      }
+
+      moveTo(item) {
+        anime({
+          targets: this.$element[0],
+          left: item.$element.css("left"),
+          top: item.$element.css("top"),
+          duration: 700,
+          elasticity: 500
+        });
+        if (this.next) {
+          this.next.moveTo(item);
+        }
+      }
+
+      updatePosition() {
+        anime({
+          targets: this.$element[0],
+          left: this.prev.$element.css("left"),
+          top: this.prev.$element.css("top"),
+          duration: 200
+        });
+
+        if (this.next) {
+          this.next.updatePosition();
+        }
+      }
+    }
+
+    class Menu {
+      constructor(menu) {
+        this.$element = $(menu);
+        this.size = 0;
+        this.first = null;
+        this.last = null;
+        this.timeOut = null;
+        this.hasMoved = false;
+        this.status = "closed";
+      }
+
+      add(item) {
+        var menu = this;
+        if (this.first == null) {
+          this.first = item;
+          this.last = item;
+          this.first.$element.on("mouseup", function () {
+            if (menu.first.isMoving) {
+              menu.first.isMoving = false;
+            } else {
+              menu.click();
+            }
+          });
+          item.$element.draggable(
+            {
+              start: function () {
+                menu.close();
+                item.isMoving = true;
+              }
+            },
+            {
+              drag: function () {
+                if (item.next) {
+                  item.next.updatePosition();
+                }
+              }
+            },
+            {
+              stop: function () {
+                item.isMoving = false;
+                item.next.moveTo(item);
+              }
+            }
+          );
+        } else {
+          this.last.next = item;
+          item.prev = this.last;
+          this.last = item;
+        }
+        this.$element.after(item.$element);
+
+
+      }
+
+      open() {
+        this.status = "open";
+        var current = this.first.next;
+        var iterator = 1;
+        var head = this.first;
+        var sens = head.$element.css("left") < 10 ? 1 : -1;
+        while (current != null) {
+          anime({
+            targets: current.$element[0],
+            left: parseInt(head.$element.css("left"), 10) + (sens * (iterator * 65)),
+            top: head.$element.css("top"),
+            duration: 500
+          });
+          iterator++;
+          current = current.next;
+        }
+      }
+
+      close() {
+        this.status = "closed";
+        var current = this.first.next;
+        var head = this.first;
+        var iterator = 1;
+        while (current != null) {
+          anime({
+            targets: current.$element[0],
+            left: head.$element.css("left"),
+            top: head.$element.css("top"),
+            duration: 500
+          });
+          iterator++;
+          current = current.next;
+        }
+      }
+
+      click() {
+        if (this.status == "closed") {
+          this.open();
+        } else {
+          this.close();
+        }
+      }
+
+    }
+
+    var menu = new Menu("#myMenu");
+    var item1 = new Item("link", "#fff");
+    var item2 = new Item("page-csv", "#FFF15C", "resumes/howard_wang_resume.pdf");
+    var item3 = new Item("social-github", "#FF5C5C", "https://www.github.com/hwanggit");
+    var item4 = new Item("social-facebook", "#5CD1FF", "https://www.facebook.com/howard.wang.509");
+    var item5 = new Item("social-linkedin", "#64F592", "https://www.linkedin.com/in/hwangprof");
+
+    menu.add(item1);
+    menu.add(item2);
+    menu.add(item3);
+    menu.add(item4);
+    menu.add(item5);
+    $(document).delay(50).queue(function (next) {
+      menu.open();
+      next();
+      $(document).delay(1000).queue(function (next) {
+        menu.close();
+        next();
+      });
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#navmenu li a").removeClass('active');
+      $(".flipper").animate({
+        "scrollTop": 0
+      }, 0);
+    });
+
+    $(".flipper").click(function () {
+      if ($(this).scrollTop() != 0) {
+        $(this).animate({
+          "scrollTop": 0
+        }, 500);
+      }
+      else {
+        var height = $(".flipper img").height();
+        $(this).animate({
+          "scrollTop": height
+        }, 500);
+      }
+    });
+    $(".flipper").mouseover(function () {
+      if ($(this).scrollTop() != 0) {
+        return;
+      }
+      var height = $(".flipper img").height();
+      $(this).animate({
+        "scrollTop": height
+      }, 500);
+    });
+    $(".flipper").mouseleave(function () {
+      if ($(this).scrollTop() == 0) {
+        return;
+      }
+      $(this).animate({
+        "scrollTop": 0
+      }, 500);
+    });
+  </script>
+$(window).on("load", function () {
+	$(window).scroll(function () {
+		var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+		$(".fade").each(function () {
+			/* Check the location of each desired element */
+			var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+			/* If the element is completely within bounds of the window, fade it in */
+			if (objectBottom < (windowBottom - 80)) { //object comes into view (scrolling down)
+				if ($(this).css("opacity") == 0) {
+					$(this).animate({ opacity: 1 }, { duration: 100, queue: false });
+					$(this).animate({ "margin-top": "10px" }, { duration: 500, queue: false });
+				}
+			}
+		});
+	}).scroll(); //invoke scroll-handler on page-load
+});
+-->
