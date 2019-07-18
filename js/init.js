@@ -58,6 +58,12 @@ $('#nav-link-6, #bottomnav #nav-link-6').click(function () {
 
 // On hover stats link generates profile menu
 $('#profile-image').mouseenter(function () {
+	// if height/width is less than a certain threshold, then don't show
+	let heightLimit = $('#topnav').height() + $('#nav-link-4 svg').width() * 36 / 5
+	if ($(window).height() <= heightLimit) {
+		return
+	}
+	
 	$('#profile-menu').show()
 
 	// set left position of dropdown menu to offset left
@@ -90,6 +96,12 @@ $('#nav-link-2').mouseleave(function () {
 
 // On hover stats link generates dropdown menu
 $('#nav-link-3').mouseenter(function () {
+	// if height/width is less than a certain threshold, then don't show
+	let heightLimit = $('#topnav').height() + $('#nav-link-4 svg').width() * 36 / 5
+	if ($(window).height() <= heightLimit) {
+		return
+	}
+
 	$('#dropdown-menu').show()
 
 	// Get left offset of third nav link
@@ -108,6 +120,12 @@ $('#nav-link-3').mouseleave(function () {
 
 // On hover stats link generates dropdown menu
 $('#nav-link-4').mouseenter(function () {
+	// if height/width is less than a certain threshold, then don't show
+	let heightLimit = $('#topnav').height() + $('#nav-link-4 svg').width() * 36 / 5
+	if ($(window).height() <= heightLimit) {
+		return
+	}
+
 	$('#dropdown-menu-courses').show()
 
 	// Get left offset of third nav link
@@ -126,6 +144,12 @@ $('#nav-link-4').mouseleave(function () {
 
 // On hover stats link generates dropdown menu
 $('#nav-link-5').mouseenter(function () {
+	// if height/width is less than a certain threshold, then don't show
+	let heightLimit = $('#topnav').height() + $('#nav-link-4 svg').width() * 36 / 5
+	if ($(window).height() <= heightLimit) {
+		return
+	}
+	
 	$('#dropdown-menu-research').show()
 
 	// Get left offset of third nav link
