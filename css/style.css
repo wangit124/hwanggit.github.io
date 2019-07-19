@@ -361,18 +361,34 @@ body {
 #globe-animate svg{
 	margin: auto;
 	width: 90%;
-	transform: rotate(-80deg);
+	transform: rotate(-90deg);
 }
 
 #sprout-animate {
-	height:110px;
+	padding-top: 11px;
 	width:400px;
 	position:absolute;
 	text-align: center;
+	overflow: hidden;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	z-index: 2;
+	background-position: bottom 6px center;
+	background-repeat: no-repeat;
+	background-size: 100px 120px;
+}
+
+/* Animate sprout background*/
+@keyframes popin {
+	0%   {	background-size: 100px 0px;}
+	70%  {	background-size: 100px 150px;}
+	75%  { 	background-size: 100px 100px;}
+	80%  { 	background-size: 100px 140px;}
+	85%  { 	background-size: 100px 110px;}
+	90%  { 	background-size: 100px 130px;}
+	95%  { 	background-size: 100px 120px;}
+	100% {	background-size: 100px 120px;}
 }
 
 #sprout-animate img {

@@ -1,16 +1,3 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-	apiKey: "AIzaSyD8kAeufsWRupHrkwt-7fPlINxwFyzo2EY",
-	authDomain: "hwang-96e16.firebaseapp.com",
-	databaseURL: "https://hwang-96e16.firebaseio.com",
-	projectId: "hwang-96e16",
-	storageBucket: "hwang-96e16.appspot.com",
-	messagingSenderId: "44659348911",
-	appId: "1:44659348911:web:5008629a58d15a90"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
 // When document loaded, increment view count
 $(document).ready(function () {
 
@@ -143,7 +130,7 @@ $('#nav-link-5').mouseenter(function () {
 	if ($(window).height() <= heightLimit) {
 		return
 	}
-	
+
 	$('#dropdown-menu-research').show()
 
 	// Get left offset of third nav link
@@ -184,18 +171,31 @@ $('#topnav li, #bottomnav li').mouseleave(function () {
 });
 
 // Click events
-$('.social-link').click(function() {
+$('.social-link').click(function () {
 	// Get type
 	let type = $(this).attr('type')
-	
+
 	// Direct to respective sites
-	if (type==='github') {
+	if (type === 'github') {
 		window.location.replace('https://www.github.com/hwanggit')
 	}
-	else if (type==='linkedin') {
+	else if (type === 'linkedin') {
 		window.location.replace('https://www.linkedin.com/in/hwangprof')
 	}
 	else {
 		window.location.replace('https://www.facebook.com/howard.wang.509')
 	}
 });
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+	apiKey: "AIzaSyD8kAeufsWRupHrkwt-7fPlINxwFyzo2EY",
+	authDomain: "hwang-96e16.firebaseapp.com",
+	databaseURL: "https://hwang-96e16.firebaseio.com",
+	projectId: "hwang-96e16",
+	storageBucket: "hwang-96e16.appspot.com",
+	messagingSenderId: "44659348911",
+	appId: "1:44659348911:web:5008629a58d15a90"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);

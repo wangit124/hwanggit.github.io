@@ -19,6 +19,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
+  <!-- greensock animation stylesheet -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -226,24 +230,26 @@
 
   <!-- Designer -->
   <div id="cloud-header">
-      <img src="images/headers/Designer.png">
+    <img src="images/headers/Designer.png">
   </div>
 
   <!-- And -->
   <div id="cloud-header-2">
-      <img src="images/headers/and.png">
+    <img src="images/headers/and.png">
   </div>
 
   <!-- Developer -->
   <div id="cloud-header-3">
-      <img src="images/headers/developer.png">
+    <img src="images/headers/developer.png">
   </div>
 
   <!-- Globe Animation -->
   <div id="globe-animate">
+
+    <!-- Handles Dialogue and city animations -->
     <div id="sprout-animate">
       <div id="dialog-box" class="tooltip-3">
-        <p>Hi, I'm Howard!</p>
+        <p id="monologue">Hi, I'm Howard! <br> Welcome to my website!</p>
       </div>
       <div id="bottom-triangle"></div>
       <img src="images/Walk cycle/cycle1.png">
