@@ -256,6 +256,16 @@ body {
 	position: absolute;
 }
 
+#bottom-triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid white;
+	margin: -10px auto;
+	margin-bottom: 2px;
+}
+
 #profile-divider {
 	margin-top:25px;
 	height:150px;
@@ -355,18 +365,86 @@ body {
 }
 
 #sprout-animate {
-	height:100px;
+	height:110px;
 	width:400px;
 	position:absolute;
 	text-align: center;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%)
+	transform: translateX(-50%);
+	z-index: 4;
 }
 
 #sprout-animate img {
 	height:107px;
 	display:inline-block;
+}
+
+#dialog-box {
+	margin: auto;
+	margin-bottom:10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#dialog-box p {
+	margin:0;
+	display:inline-block;
+	text-align:center;
+	font-size: 15px;
+}
+
+#cloud-header {
+	position: absolute;
+	display:inline-block;
+	text-align:center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#cloud-header img {
+	margin:auto;
+	-webkit-filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+	filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+}
+
+#cloud-header-2 {
+	position: absolute;
+	display:inline-block;
+	text-align:center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#cloud-header-2 img {
+	margin:auto;
+	-webkit-filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+	filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+}
+
+#cloud-header-3 {
+	position: absolute;
+	display:inline-block;
+	text-align:center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#cloud-header-3 img {
+	margin:auto;
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+	filter: drop-shadow(8px 6px 3px rgba(10,4,3,0.64));
+}
+
+#cloud-header-3, #cloud-header-3 img, #cloud-header, #cloud-header img{
+	height: 22vw;
+	width: 22vw;
+}
+
+#cloud-header-2, #cloud-header-2 img {
+	height: 9vw;
+	width: 9vw;
 }
 
 /* Desktop */
@@ -382,7 +460,20 @@ body {
 
 /* Small Desktop */
 @media all and (max-width: 991px) {
+	#cloud-header, #cloud-header-3 {
+		height: 25vw;
+		width: 25vw;
+	}
+	
+	#cloud-header-2, #cloud-header-2 img {
+		height: 10vw;
+		width: 10vw;
+	}
 
+	#cloud-header img, #cloud-header-3 img {
+		height: 25vw;
+		width: 25vw;
+	}
 } 
 
 /* Tab, iPad, etc */
@@ -402,6 +493,21 @@ body {
 
 	#profile-card-half ul li:last-child {
 		display: inline-block;
+	}
+
+	#cloud-header, #cloud-header-3  {
+		height: 20vh;
+		width: 20vh;
+	}
+	
+	#cloud-header img,  #cloud-header-3 img{
+		height: 20vh;
+		width: 20vh;
+	}
+
+	#cloud-header-2, #cloud-header-2 img {
+		height: 10vh;
+		width: 10vh;
 	}
 }
  
