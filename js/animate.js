@@ -56,7 +56,8 @@ $(window).resize(function () {
         $('#cloud-header').css('left', '28%')
     }
     
-    $('#sprout-animate').css('margin-top', parseInt($('#globe-animate svg').css('margin-top')) - parseInt($('#sprout-animate').height()) - parseInt($('#dialog-box').height()))});
+    $('#sprout-animate').css('margin-top', parseInt($('#globe-animate svg').css('margin-top')) - parseInt($('#sprout-animate').height()) - parseInt($('#dialog-box').height()))
+});
 
 // Animate walking cycle
 $(function(){
@@ -170,6 +171,13 @@ $.fn.animateRotate = function (endAngle, options, startAngle) {
     });
 };
 
-$('#globe-animate svg').animateRotate(-360, {duration: 40000});  
+// Animate earth rotate, and person dialog
+$(function () {
+    // Rotate for 40 seconds
+    $('#globe-animate svg').animateRotate(-360, {duration: 40000}); 
+
+    // 
+});
+ 
 
 
