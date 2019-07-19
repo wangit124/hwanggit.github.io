@@ -58,12 +58,6 @@ $('#nav-link-6, #bottomnav #nav-link-6').click(function () {
 
 // On hover stats link generates profile menu
 $('#profile-image').mouseenter(function () {
-	// if height/width is less than a certain threshold, then don't show
-	let heightLimit = $('#topnav').height() + $('#nav-link-4 svg').width() * 36 / 5
-	if ($(window).height() <= heightLimit) {
-		return
-	}
-	
 	$('#profile-menu').show()
 
 	// set left position of dropdown menu to offset left
