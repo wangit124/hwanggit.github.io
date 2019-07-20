@@ -49,12 +49,12 @@ $(document).ready(function () {
             message = 'Click me to see my story!'
             toggle = 0
         }
-
-        // On click, stop toggle
-        $('#sprout-animate').click(function () {
-            clearInterval(messageRepeat)
-        });
     }, 2500)
+
+    // On click, stop toggle
+    $('#sprout-animate').click(function () {
+        clearInterval(messageRepeat)
+    });
 });
 
 $(window).resize(function () {
@@ -104,19 +104,162 @@ $(function () {
     }, 20000);
 });
 
-// Animate earth rotate, and person dialog
+// The story, sequential animations
 $('#sprout-animate').click(function () {
     // toggle switch
     if (animationDone === true) {
+        animationDone = false;
+
         // Change background
-        generateBackground('images/animations/skyscrapers.png', 6)
+        generateBackground('images/animations/pagoda.png')
 
         // Hide dialog box
         $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
 
-        animationDone = false;
+        // Part 1: Where I was born
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("I was born in the rural <br> province of Gansu, China")
+        }, 2000);
+
+        setTimeout(function () {
+            resizeDialogue("My parents were farmers. <br> We lived poor, but free")
+        }, 4500);
+
+        // Part 2: Moving to Nanjing 
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+            clearBackground()
+            startWalk(20)
+            earthSpin(-90, -115, 2000)
+        }, 7500);
+
+        setTimeout(function () {
+            generateBackground('images/animations/skyscrapers.png')
+        }, 9500);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("At age 4, I had my first taste <br> of city life when we moved to <br> the former capital, Nanjing")
+        }, 11500);
+
+        setTimeout(function () {
+            clearBackground()
+            resizeDialogue("A year later, our lives took a <br> drastic turn. We emigrated <br> to Canada")
+        }, 15000);
+
+        // Part 3: Emigration to Canada
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+            startWalk(29)
+            earthSpin(-115, -300, 3000)
+        }, 18000);
+
+        setTimeout(function () {
+            generateBackground('images/animations/cn-tower.png')
+        }, 21000);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("Our lives were not ideal. <br> We were treated unequally <br> due to our poor English")
+        }, 22500);
+
+        // Part 4: Attending school, IB
+        setTimeout(function () {
+            clearBackground()
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+        }, 25500);
+
+        setTimeout(function () {
+            generateBackground('images/animations/school.png')
+        }, 26300);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("But we never gave up. I <br> enrolled in gifted education, <br> finishing with an IB diploma")
+        }, 27800);
+
+        // Part 5: To the US
+        setTimeout(function () {
+            clearBackground()
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+            startWalk(20)
+            earthSpin(-300, -330, 2000)
+        }, 31000);
+
+        setTimeout(function () {
+            generateBackground('images/animations/california.png')
+        }, 33000);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("That was two years ago. <br> Despite our struggle, my <br> family made it to the US")
+        }, 34500);
+
+        setTimeout(function () {
+            clearBackground()
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+        }, 38000);
+
+        // Part 6: Attending UCSD
+        setTimeout(function () {
+            generateBackground('images/animations/college.png')
+        }, 39000);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("Now, I am pursuing a <br> B.S. in Computer Science <br> at UC San Diego")
+        }, 40500);
+
+        setTimeout(function () {
+            clearBackground()
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+        }, 43500);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("My goal is to become a <br> software engineer in the <br> future and impact the world!")
+        }, 44500);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'hidden')
+            startWalk(29)
+            earthSpin(-330, -450, 3000)
+        }, 47500);
+
+        setTimeout(function () {
+            $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
+            resizeDialogue("Hi, I'm Howard! <br> Welcome to my website!")
+            
+            // Create a intro message and toggle 
+            var message = 'Click me to see my story!'
+            var toggle = 0
+
+            // After a few seconds, display click me
+            var messageRepeat = setInterval(function () {
+                // Resize dialogue then toggle between messages
+                resizeDialogue(message)
+
+                if (toggle == 0) {
+                    message = "Hi, I'm Howard! <br> Welcome to my website!"
+                    toggle = 1
+                }
+                else {
+                    message = 'Click me to see my story!'
+                    toggle = 0
+                }
+            }, 2500)
+
+            // On click, stop toggle
+            $('#sprout-animate').click(function () {
+                clearInterval(messageRepeat)
+            });
+
+            animationDone = true
+        }, 50500);
     }
 });
+
 
 // Animate walking cycle
 function startWalk(duration) {
@@ -214,6 +357,9 @@ function resizeDialogue(message) {
     if (message !== "none") {
         $('#monologue').html(message)
     }
+    else {
+        $('#monologue').html("Hi, I'm Howard! <br> Welcome to my website!")
+    }
 
     // Set dialog box height and width to be same as text
     $('#dialog-box').css('height', $('#dialog-box p').height() * 1.5)
@@ -221,14 +367,27 @@ function resizeDialogue(message) {
     $('#dialog-box p').css('padding-top', $('#dialog-box p').height() * 0.25)
 
     // Set top margin of sprout animation
-    $('#sprout-animate').css('margin-top', parseInt($('#globe-animate svg').css('margin-top')) - parseInt($('#sprout-animate').height()))    
+    $('#sprout-animate').css('margin-top', parseInt($('#globe-animate svg').css('margin-top')) - parseInt($('#sprout-animate').height()))
     tl.from('#dialog-box, #bottom-triangle', 0.5, { scaleY: 0, transformOrigin: "bottom", ease: Back.easeOut })
 }
 
 // Create a function to popup a background image to sprout
-function generateBackground(image, offset) {
-   $('#sprout-animate').css({"background-image": "url('"+image+"')", "animation-name": "popin",
-            "animation-duration": "1.5s", "background-position": "bottom" 
-        + offset + " px center"});
-   
+function generateBackground(image) {
+    $('#sprout-animate').css({
+        "background-size": "130px 130px", "background-image": "url('" + image + "')", "animation-name": "popin",
+        "animation-duration": "1.5s"
+    });
+}
+
+// Create a function to clear a background image
+function clearBackground() {
+    $('#sprout-animate').css({
+        "background-size": "130px 0px", "animation-name": "popout",
+        "animation-duration": "0.8s"
+    });
+}
+
+// Function to move earth
+function earthSpin(start, end, duration) {
+    $('#globe-animate svg').animateRotate(end, { duration: duration }, start)
 }

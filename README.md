@@ -8,5 +8,5 @@ All svg icons used are from:
 
     1. The noun project, created by artists Maxim Kulikov, throwaway icons, Smalllike, supalerk laipawat, Loki Ba
 
-    2. Flaticon, 
+    2. Flaticon, created by Freepik, smalllikeart, RoundIcons
 
