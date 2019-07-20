@@ -177,13 +177,13 @@ $('.social-link').click(function () {
 
 	// Direct to respective sites
 	if (type === 'github') {
-		window.location.replace('https://www.github.com/hwanggit')
+		window.location.href = 'https://www.github.com/hwanggit'
 	}
 	else if (type === 'linkedin') {
-		window.location.replace('https://www.linkedin.com/in/hwangprof')
+		window.location.href = 'https://www.linkedin.com/in/hwangprof'
 	}
 	else {
-		window.location.replace('https://www.facebook.com/howard.wang.509')
+		window.location.href = 'https://www.facebook.com/howard.wang.509'
 	}
 });
 
