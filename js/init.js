@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 	// Set views for current page
 	database.transaction(function (currViews) {
-		// If title/views has never been set, value will be `null`.
+		// If title/views has never been set, value will be 1.
 		return (currViews || 0) + 1;
 	});
 

@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Easy Tour",
+        "image_url": "../images/projects/easytour.png",
+        "visit": "https://easy-tour-2019.herokuapp.com/",
+        "code": "https://github.com/hwanggit/Easy-Tour",
+        "description": "Developed an <b>AI web app</b> for Tourism that maps out your trip for you: <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b> <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b> to correct resting tremor symptoms. <br><br>3. Rendered <b> 3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>. <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API</b>.",
+        "tags" : ["all", "websites", "hackathons"]
+    },
+    {
+        "name": "Easy Tour",
+        "image_url": "../images/projects/easytour.png",
+        "visit": "https://easy-tour-2019.herokuapp.com/",
+        "code": "https://github.com/hwanggit/Easy-Tour",
+        "description": "Developed an <b>AI web app</b> for Tourism that maps out your trip for you: <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b> <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b> to correct resting tremor symptoms. <br><br>3. Rendered <b> 3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>. <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API</b>.",
+        "tags" : ["all", "websites", "hackathons"]
+    }
+]

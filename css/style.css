@@ -24,6 +24,7 @@ body {
 	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 1px 2px 0px rgba(43, 41, 41, 0.75);
+	background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 }
 
 #bottomnav {
@@ -37,6 +38,7 @@ body {
 	-webkit-box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px -1px 2px 0px rgba(43, 41, 41, 0.75);
+	background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
 }
 
 #topnav li{
@@ -55,6 +57,7 @@ body {
 	list-style: none;
 	box-sizing: border-box;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 #topnav li a{
@@ -469,6 +472,58 @@ body {
 	width: 9vw;
 }
 
+#project-container {
+	padding-top:9em;
+	width: 100%;
+	margin: auto;
+	overflow: scroll;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.project-item {
+	width: 90%;
+	display:inline-block;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+
+.project-image {
+	width: 40%;
+	display:inline-block;
+	height: auto;
+}
+
+.project-image img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 2px 0px rgba(43, 41, 41, 0.75);
+}
+
+.project-description {
+	width: 55%;
+	height: 100%;
+	float:right;
+	text-align: center;	
+}
+
+.project-description p{
+	text-align: left;
+	color: white;
+	font-size: 15px;
+	width: 100%;
+}
+
+.project-title {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+
 /* Desktop */
 @media all and (max-width: 1110px) {
 	#topnav li svg {
@@ -477,6 +532,22 @@ body {
 
 	#topnav li a {
 		display:none;
+	}
+
+	.project-description {
+		width: 50%;
+	}
+
+	.project-description p{
+		font-size: 14px;
+	}
+	
+	.project-title {
+		font-size:20px;
+	}
+
+	.project-image {
+		width: 45%;
 	}
 } 
 
@@ -496,11 +567,45 @@ body {
 		height: 25vw;
 		width: 25vw;
 	}
+
+	.project-description {
+		width: 45%;
+	}
+
+	.project-description p{
+		font-size: 13px;
+	}
+	
+	.project-title {
+		font-size:16px;
+	}
+
+	.project-image {
+		width: 50%;
+	}
 } 
 
 /* Tab, iPad, etc */
 @media all and (max-width: 768px) {
+	.project-image {
+		width: 75vw;
+		margin-left: 7.5vw;
+	}
 
+	.project-description {
+		width: 75%;
+		float: left;
+		margin-left: 12.5vw;
+		margin-top: 5vw;
+	}
+
+	.project-description p{
+		font-size: 15px;
+	}
+	
+	.project-title {
+		font-size:20px;
+	}
 } 
 
 /* phone screen*/
