@@ -1,0 +1,57 @@
+[
+    {
+        "name": "CSE 140/140L",
+        "image_url": "../images/courses/icestick-fpga.jpg",
+        "visit": "",
+        "code": "",
+        "description": "Topics included Boolean algebra, logic design, hardware design, verilog and fpga programming: <br><br> 1. Designed 4-bit ripple carry adder, and count-down timer <br><br> 2. Implemented minimum viable product for minutes-seconds alarm clock with alert, reset, set functionalities <br><br> 3. Implemented LFSR-based cipher that can generate Hex messages and decipher them using a shifting key <br><br> Languages and Frameworks used: Intel Quartus Prime, ModelSim, Verilog, VDHL, Icestick FPGA, ICECUBE 2.0",
+        "tags": [
+            "all",
+            "computerarchitecture"
+        ]
+    },
+    {
+        "name": "CSE 105",
+        "image_url": "../images/courses/cse105.png",
+        "visit": "",
+        "code": "",
+        "description": "Topics included Finite Automata, Regular, Context-free, Turing-recognizable languages and more: <br><br> 1. Designed DFAs, NFAs, PDAs, and Turing Machines <br><br> 2. Proved regularity of languages, closure properties, decidability, enumerability using tools such as Pumping Lemma <br><br> 3. Proved whether certain problems could be solved, using Turing machines <br><br> Languages and Frameworks used: Flap.js (building/designing FAs)",
+        "tags": [
+            "all",
+            "theoryofcomputation"
+        ]
+    },
+    {
+        "name": "CSE 100",
+        "image_url": "../images/courses/kevin-bacon.png",
+        "visit": "",
+        "code": "",
+        "description": "Topics included Time Complexity and implementation of BST/KD/RB/Huffman Trees, Tries, Hashtables, graphs, proving P/NP: <br><br> 1. Implemented full Huffman encoding tree and bit buffer to compress files, then reconstructed tree from compressed file header using custom designed algorithm <br> 2. Implemented KNN classifier using KD Tree and optimized to reduce training/validation error on large text files <br> 3. Implemented complex graph to store actor-movie relationships on IMDB. Wrote and compared BFS/DFS, Dijkstra, and A* search algorithms <br> <br> Languages and Frameworks used: C++, C, GDB, Vim, Valgrind",
+        "tags": [
+            "all",
+            "datastructures"
+        ]
+    },  
+    {
+        "name": "CSE 30",
+        "image_url": "../images/courses/arm.png",
+        "visit": "",
+        "code": "",
+        "description": "Topics included ARM Assembly language, C compilers, memory vs. stack layouts, bit manipulation: <br><br> 1. Implemented program to draw radioactive pinwheel, compiling ARM assembly code on Raspberry Pi <br><br> 2. Implemented bit-shifting cipher using rotating 4-byte registers <br><br> 3. Implemented markovian word and sentence predictor using hashtables and linked lists, then trained data on bee movie script <br><br> Languages and Frameworks used: C, ARM Assembly, GDB",
+        "tags": [
+            "all",
+            "armassembly"
+        ]
+    },  
+    {
+        "name": "CSE 8A/8B",
+        "image_url": "../images/projects/coursework/2048.png",
+        "visit": "./demos.html",
+        "code": "",
+        "description": "Topics included basic Java OOP and OOD, JavaFx GUI design, recursive art, pixel manipulation <br><br> 1. Recreated and redesigned 2048 game using JavaFx library <br><br> 2. Manipulated image properties using Java picture class and created green-screen poster as well as recursively drawn tree <br><br> 3. Implemented game subclass using OOP principles to define different creature moves, then competed in class-wide tournament <br><br> Languages and Frameworks used: Java, JavaFx, JUnit",
+        "tags": [
+            "all",
+            "guidesign"
+        ]
+    }
+]

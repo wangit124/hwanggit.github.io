@@ -6,21 +6,21 @@ $(function () {
     // Check height of window
     if ($(window).width() <= 575) {
         // Set height of project container
-        $('#project-container').css('height', $(window).height() - $('#bottomnav').height() - 9 * 12)
+        $('#project-container, #course-container').css('height', $(window).height() - $('#bottomnav').height() - 9 * 12)
     }
     else {
         // Set height of project container
-        $('#project-container').css('height', $(window).height() - 9 * 12)
+        $('#project-container, #course-container').css('height', $(window).height() - 9 * 12)
         if ($(window).width() > 840) {
-            $('.project-description').css('padding-top', ($('.project-image').height() - $('.project-description').height()) / 2)
+            $('.project-description, .course-description').css('padding-top', ($('.project-image, .course-image').height() - $('.project-description, .course-description').height()) / 2)
         }
         else {
-            $('.project-description').css('padding-top', '2em')
+            $('.project-description, .course-description').css('padding-top', '2em')
         }
     }
 
     // Set project overlay padding
-    $('#project-overlay').css('padding-top', parseInt($('.project-image').height() / 2) - 10)
+    $('#project-overlay, #course-overlay').css('padding-top', parseInt($('.project-image, .course-image').height() / 2) - 10)
 });
 
 // Resize project container
@@ -28,20 +28,21 @@ $(window).resize(function () {
     // Check height of window
     if ($(window).width() <= 575) {
         // Set height of project container
-        $('#project-container').css('height', $(window).height() - $('#bottomnav').height() - 9 * 12)
+        $('#project-container, #course-container').css('height', $(window).height() - $('#bottomnav').height() - 9 * 12)
     }
     else {
         // Set height of project container
-        $('#project-container').css('height', $(window).height() - 9 * 12)
+        $('#project-container, #course-container').css('height', $(window).height() - 9 * 12)
         if ($(window).width() > 840) {
-            $('.project-description').css('padding-top', ($('.project-image').height() - $('.project-description').height()) / 2)
+            $('.project-description, .course-description').css('padding-top', ($('.project-image, .course-image').height() - $('.project-description, .course-description').height()) / 2)
         }
         else {
-            $('.project-description').css('padding-top', '2em')
+            $('.project-description, .course-description').css('padding-top', '2em')
         }
     }
+
     // Set project overlay padding
-    $('#project-overlay').css('padding-top', parseInt($('.project-image').height() / 2) - 10)
+    $('#project-overlay, #course-overlay').css('padding-top', parseInt($('.project-image, .course-image').height() / 2) - 10)
 });
 
 // Projects page
@@ -150,20 +151,25 @@ $('#nav-link-6, #bottomnav #nav-link-6').click(function () {
 
 // Detect changes to current Tag
 database.ref("CurrentTag").on("value", function (snap) {
-    if ($(document).find('title').first().text() === "Projects") {
-        populate('../projects/projects.json', snap.val())
+    // Get document title
+    let title = $(document).find('title').first().text()
+    if (title === "Projects") {
+        populate('../projects/projects.json', snap.val(), "project")
+    }
+    else if (title === "Coursework") {
+        populate('../coursework/courses.json', snap.val(), "course")
     }
 });
 
 // Populate container
-function populate(filePath, currentTag) {
+function populate(filePath, currentTag, page) {
     $.getJSON(filePath, function (data) {
         // Go through each item and if it matches tag, display
         for (var i = 0; i < data.length; i++) {
             // If tag matches, make project item and display
             if (data[i].tags.includes(currentTag)) {
-                let projectItem = '<div class="project-item"><div class="project-image"><div id="project-overlay"><a href="' + data[i].visit + '" id="visit-btn">VISIT</a><a href="' + data[i].code + '" id="code-btn">CODE</a></div><img src="' + data[i].image_url + '"></div><div class="project-description"><b class="project-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
-                $('#project-container').append(projectItem)
+                let item = '<div class="'+page+'-item"><div class="'+page+'-image"><div id="'+page+'-overlay"><a href="' + data[i].visit + '" id="visit-btn">VISIT</a><a href="' + data[i].code + '" id="code-btn">CODE</a></div><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
+                $('#'+page+'-container').append(item)
             }
         }
     });
