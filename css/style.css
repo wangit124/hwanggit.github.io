@@ -510,7 +510,7 @@ body {
 	transition: opacity 0.5s;
 	text-align: center;
 	box-sizing: border-box;
-	padding-top: 25%;
+	padding-top: 28%;
 }
 
 #project-overlay a {
@@ -565,6 +565,31 @@ body {
 .project-title {
 	color: white;
 	font-size: 20px;
+}
+
+.demo-module {
+	padding-top: 9em; 
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.demo-module video{
+	height: 100%;
+	width: 100%;
+}
+
+.demo-module h1 {
+	color: white;
+}
+
+#hackeye {
+	width: 280px;
+}
+
+#connect4, #numbergame {
+	width: 400px;
+	height: 300px;
 }
 
 /* Desktop */

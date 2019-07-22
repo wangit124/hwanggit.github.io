@@ -1,14 +1,103 @@
 [
     {
+        "name": "Hackeye IOS App",
+        "image_url": "../images/projects/Hackeye/hackeye.jpg",
+        "visit": "./demos.html",
+        "code": "https://github.com/hwanggit/Hackeye-ios-app",
+        "description": "Finder app that points you to the nearest hardware-inspired project meetup for collaboration: <br><br> 1. Designed custom UI pages and developed front-end features in Xcode/Swift <br><br> 2. Processed multi-location data and provide project suggestions based on proximity <br><br> 3. Scraped project data using REST API and implemented full mobile pagination <br><br> Languages and Frameworks: Swift, Xcode, CoreLocation, Hackaday API",
+        "tags": [
+            "all",
+            "mobile"
+        ]
+    },
+    {
+        "name": "Hackeye.io",
+        "image_url": "../images/projects/Hackeye/landing.png",
+        "visit": "https://hackeye-io.herokuapp.com/",
+        "code": "https://github.com/hwanggit/Hackeye.io",
+        "description": "An extension for Hackaday.io that provides project and user info: <br><br> 1. Custom SVG animations for landing and loading page logo and titles <br><br> 2. No-reload pagination of project items with custom URLs for each page <br><br> 3. User tooltip displaying profile name, rank and motivations on hover <br><br>Languages and Frameworks: Node Js, Tweenmax, GSAP, EJS, NightWatch, Heroku",
+        "tags": [
+            "all",
+            "websites"
+        ]
+    },
+    {
         "name": "Easy Tour",
         "image_url": "../images/projects/easytour/easytour-dest.png",
         "visit": "https://easy-tour-2019.herokuapp.com/",
         "code": "https://github.com/hwanggit/Easy-Tour",
-        "description": "Developed an <b>AI web app</b> for Tourism that maps out your trip for you: <br><br>1. Implemented <b>color-to-emotion</b> model using <b>Google Vision to tag Flickr photos</b> <br><br>2. Performed <b> RESTful API</b> calls and <b>CRUD operations</b> to <b>JSON files using Node.js</b> to correct resting tremor symptoms. <br><br>3. Rendered <b> 3-D interactive map</b> routes using <b>HTML and MapBox GL JS</b>. <br><br>Languages and Frameworks: <b>: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API</b>.",
+        "description": "Developed an AI web app for Tourism that maps out your trip for you (LA Hacks 2018): <br><br>1. Implemented color-to-emotion model using Google Vision to tag Flickr photos <br><br>2. Performed  RESTful API calls and CRUD operations to JSON files using Node.js <br><br>3. Rendered  3-D interactive map routes using HTML and MapBox GL JS <br><br>Languages and Frameworks: : HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API",
         "tags": [
             "all",
             "websites",
             "hackathons"
+        ]
+    },
+    {
+        "name": "Pi for Parkinson's",
+        "image_url": "../images/projects/pipe/pipe.jpg",
+        "visit": "http://acsweb.ucsd.edu/~luw055/",
+        "code": "https://github.com/hwanggit/Pi-for-Parkinson-s",
+        "description": "Assistive Medical IoT Device and Software for Parkinson's Patients: <br><br>1. Led a team of 3 to create a medically assistive IoT device for Parkinson's Patients <br><br> 2. Using Raspberry Pi, IMU, and servo technology, read live data using python program to correct resting tremor symptoms <br><br>3. Developed beautiful front end dashboard to chart live Firebase data <br><br> Languages and Frameworks: JQuery, Chart.js, Firebase, Python",
+        "tags": [
+            "all",
+            "websites",
+            "iot"
+        ]
+    },
+    {
+        "name": "UCSD A Cappella Choir",
+        "image_url": "../images/projects/acachoir/acachoir.PNG",
+        "visit": "https://acachoir.ucsd.edu",
+        "code": "https://github.com/hwanggit/acachoir.ucsd.edu",
+        "description": "UCSD A Cappella Choir website created with bootstrap, JQuery, and hosted on UCSD web server: <br><br>1. Used bootstrap to create a professional UI/UX web layout including event, schedule, profile, FAQ and contact pages <br><br> 2. Customized features to fit organization's primary advertising needs <br><br> 3. Implemented interactive read-and-listen webpage content to help members learn their song parts <br><br> Languages and Frameworks: Bootstrap CSS/JS, JQuery",
+        "tags": [
+            "all",
+            "websites"
+        ]
+    },
+    {
+        "name": "Doris' Designer Portfolio",
+        "image_url": "../images/projects/portfolio/dldesign.png",
+        "visit": "https://dl-design.net",
+        "code": "https://github.com/hwanggit/dl-design.net",
+        "description": "Commissioned by a friend to create her Interior Design portfolio: <br><br>1. Integrated UI features such as background parallax, Navbars, and more <br><br>2. Integrated mobile functionalities such as collapsible and draggable sidenav <br><br>3. Created fullscreen modal sliders using carousels and overlays <br><br>Languages and Frameworks: Materialize CSS/JS, JQuery",
+        "tags": [
+            "all",
+            "websites"
+        ]
+    },
+    {
+        "name": "LifeWatch 2.0",
+        "image_url": "../images/projects/hackathons/LifeWatch.png",
+        "visit": "https://devpost.com/software/lifewatch-v8qnh6",
+        "code": "https://github.com/hwanggit/LifeWatch2.0",
+        "description": "VR Lifeguard trainer created with Unity, SteamVR, and VIVE (SD Hacks 2017): <br><br>1. Created VR UI/UX environment using Unity objects and packages <br><br>2. Programmed VIVE controller and Unity object functionalities in C# <br><br>3. Worked in team of 4 and submitted to SD Hacks 2018 <br><br>Languages and Frameworks: Unity, SteamVR API, VIVE, C#",
+        "tags": [
+            "all",
+            "hackathons"
+        ]
+    },
+    {
+        "name": "Hi-Kinnect",
+        "image_url": "../images/projects/hackathons/hikinnect.png",
+        "visit": "https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy",
+        "code": "https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy",
+        "description": "Hi-Kinect is a prototype mobile hiking app (MYC 2016): <br><br> 1. Created business plan and drafted prototype UI/UX features for app-based mock startup <br><br>2. Planned to integrate Google Maps API and the city's Open Data Catalogue to help hikers navigate trails with more awareness <br><br>3. Placed 3rd out of 25 Teams and won $250 at Calgary's Mayor's Youth Council Hack-a-thon 2017 <br><br>Languages and Frameworks: Wix sites and Proto.io design software",
+        "tags": [
+            "all",
+            "hackathons",
+            "mobile"
+        ]
+    },
+    {
+        "name": "Connect Four",
+        "image_url": "../images/projects/coursework/connect4.png",
+        "visit": "./demos.html",
+        "code": "https://www.github.com/hwanggit/Connect-4",
+        "description": "Full stack Connect Four using Java: <br><br> 1. Programmed front end and back end using JavaFx/Java <br><br> 2. Implemented Press N to Restart/Clear game feature <br><br>3. Project from Luminerva Inc work experience <br><br> Languages and Frameworks used: Java, JavaFx",
+        "tags": [
+            "all"
         ]
     }
 ]
