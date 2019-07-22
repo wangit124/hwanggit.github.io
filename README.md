@@ -10,3 +10,4 @@ All svg icons used are from:
 
     2. Flaticon: created by Freepik, smalllikeart, RoundIcons
 
+[!alt]()
