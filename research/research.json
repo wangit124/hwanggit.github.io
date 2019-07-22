@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Smartfin",
+        "image_url": "../images/research/smartfin.jpg",
+        "visit": "",
+        "code": "",
+        "description": "Description: The Smartfin Project aims to unite the surfing community and the research community in an effort to fill this gap in our oceanographic data. It began years ago with the collaborative vision of Scientists and Researchers working with the Scripps Institute of Oceanography, who hoped to innovate a new way to model the behaviour of our oceans. I personally helped these scientists calculate wave direction using raw IMU magnetometer values collected by the Smartfin. <br><br> Links: <a href='https://github.com/hwanggit/Smartfin/wiki/Final-Report'>Research Paper</a>, <a href='https://www.youtube.com/watch?v=wi0JMVOShCc&feature=youtu.be'>Video</a>, <a href='https://github.com/hwanggit/Smartfin/wiki'>Wiki</a>, <a href='https://github.com/hwanggit/Smartfin'>Code Base</a> <br><br> Languages and Frameworks used: Python, Jupyter Notebooks",
+        "tags": [
+            "all",
+            "embeddedsystems"
+        ]
+    },
+    {
+        "name": "The Brachistochrone",
+        "image_url": "../images/research/tautochrone.png",
+        "visit": "",
+        "code": "",
+        "description": "Description: The Brachistochrone problem, the simplest of problems in Calculus of Variations, was first posed in 1696 as a direct challenge to all European mathematicians. It stated that the shortest path between two points in space could be represented by a Cycloidial path, not a straight one. In this research paper, I used calculus of variations, namely the Euler-langrange form and differential equations representing the law of conservation of energy to prove the brachistochrone lemma. <br><br> Links: <a href='../research/The Brachistochrone.pdf'>Research Paper</a>, <a href='../research/cycloid.html'>Python Notebook</a>",
+        "tags": [
+            "all",
+            "kinematics"
+        ]
+    },
+    {
+        "name": "Electronegativity vs. Cell Potential",
+        "image_url": "../images/research/cellpotential.png",
+        "visit": "",
+        "code": "",
+        "description": "Description: I have always considered the concept of electronegativity to be the gold nugget of the periodic table. As a numerical value assigned to each element using the Pauling scale, electronegativity represents the tendency of an atom to attract electrons towards it. How attractive is that! This tendency is facilitated by not only the element’s inherent affinity for nuclear attraction, but also the distance between their valence electrons and nucleus. Generally, what I have always loved about this concept is its simplicity, but even more than that, how it can shape our understanding of generating electrical energy. <br><br> Links: <a href='../research/Effects of electronegativity on Cell potential.pdf'>Research Paper</a>",
+        "tags": [
+            "all",
+            "electrochemistry"
+        ]
+    },
+    {
+        "name": "Quaternions",
+        "image_url": "../images/research/quaternions.jpg",
+        "visit": "",
+        "code": "",
+        "description": "Description: As I delved deeper into the world of modern geometry, I came across the dilemma mathematicians faced of having to transition to more effective and efficient methods of 3-D programming. The dilemma introduced me to the concept of how simple vector geometry can be used to model rotations in 3-D space, which was a concept I had never explored. In this paper, I explore the topic of replacing Euler Angles with Quaternions and thereby shedding past methods of geometry for more modern and sophisticated ones. The aim of this exploration was to determine the extent to which Quaternion geometry is capable of replacing Euler angles in 3-D geometry and modeling. <br><br> Links: <a href='../research/Age of Quaternions.pdf'>Research Paper</a>",
+        "tags": [
+            "all",
+            "vectortheory"
+        ]
+    },
+    {
+        "name": "Bungee Jumping",
+        "image_url": "../images/research/bungeejump.jpg",
+        "visit": "",
+        "code": "",
+        "description": "Description: This paper provides an in-depth analysis of the principles of conservation of energy and momentum, applied to the recreational activity of bungee jumping. A bunjee jump was modeled using an elasitic band, ball bearing, and sensors to detect terminal velocity. The experiment was conducted at various heights and with various lengths of bungee cord. Overall, it was proven that the return velocity of the jumper is proportional to the length of the bungee cord. <br><br> Links: <a href='../research/Bungee Jumping and Maximum Return Velocity.pdf'>Research Paper</a>",
+        "tags": [
+            "all",
+            "kinematics"
+        ]
+    }
+]

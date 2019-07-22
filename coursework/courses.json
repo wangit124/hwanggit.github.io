@@ -46,7 +46,7 @@
     {
         "name": "CSE 8A/8B",
         "image_url": "../images/projects/coursework/2048.png",
-        "visit": "./demos.html",
+        "visit": "",
         "code": "",
         "description": "Topics included basic Java OOP and OOD, JavaFx GUI design, recursive art, pixel manipulation <br><br> 1. Recreated and redesigned 2048 game using JavaFx library <br><br> 2. Manipulated image properties using Java picture class and created green-screen poster as well as recursively drawn tree <br><br> 3. Implemented game subclass using OOP principles to define different creature moves, then competed in class-wide tournament <br><br> Languages and Frameworks used: Java, JavaFx, JUnit",
         "tags": [

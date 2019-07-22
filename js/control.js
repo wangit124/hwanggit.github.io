@@ -160,7 +160,7 @@ database.ref("CurrentTag").on("value", function (snap) {
         populate('../coursework/courses.json', snap.val(), "course")
     }
     else {
-        populate('../research/research.json', snap.val(), "project")
+        populate('../research/research.json', snap.val(), "course")
     }
 });
 
@@ -171,7 +171,13 @@ function populate(filePath, currentTag, page) {
         for (var i = 0; i < data.length; i++) {
             // If tag matches, make project item and display
             if (data[i].tags.includes(currentTag)) {
-                let item = '<div class="'+page+'-item"><div class="'+page+'-image"><div id="'+page+'-overlay"><a href="' + data[i].visit + '" id="visit-btn">VISIT</a><a href="' + data[i].code + '" id="code-btn">CODE</a></div><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
+                var item = ""
+                if (page === "project") {
+                    item = '<div class="'+page+'-item"><div class="'+page+'-image"><div id="'+page+'-overlay"><a href="' + data[i].visit + '" id="visit-btn">VISIT</a><a href="' + data[i].code + '" id="code-btn">CODE</a></div><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
+                }
+                else {
+                    item = '<div class="'+page+'-item"><div class="'+page+'-image"><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
+                }
                 $('#'+page+'-container').append(item)
             }
         }

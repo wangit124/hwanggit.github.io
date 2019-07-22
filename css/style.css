@@ -567,6 +567,10 @@ body {
 	padding: 0;
 }
 
+.course-description a{
+	color: white;
+}
+
 .project-title, .course-title {
 	color: white;
 	font-size: 20px;

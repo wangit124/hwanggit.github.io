@@ -99,5 +99,15 @@
         "tags": [
             "all"
         ]
+    },
+    {
+        "name": "2048",
+        "image_url": "../images/projects/coursework/2048.png",
+        "visit": "./demos.html",
+        "code": "",
+        "description": "Full stack 2048 using Java: <br><br> 1. Programmed front end and back end using JavaFx/Java <br><br> 2. Implemented Press N to Restart/Clear game feature <br><br>3. Project from CSE 8A/8B course <br><br> Languages and Frameworks used: Java, JavaFx",
+        "tags": [
+            "all"
+        ]
     }
 ]
