@@ -10,4 +10,4 @@ All svg icons used are from:
 
     2. Flaticon: created by Freepik, smalllikeart, RoundIcons
 
-[!alt](https://github.com/hwanggit/hwanggit.github.io/blob/master/images/header-image/h-wang.png)
+![alt](https://github.com/hwanggit/hwanggit.github.io/blob/master/images/header-image/h-wang.png)

@@ -159,6 +159,9 @@ database.ref("CurrentTag").on("value", function (snap) {
     else if (title === "Coursework") {
         populate('../coursework/courses.json', snap.val(), "course")
     }
+    else {
+        populate('../research/research.json', snap.val(), "project")
+    }
 });
 
 // Populate container
