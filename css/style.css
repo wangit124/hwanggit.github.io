@@ -592,11 +592,11 @@ body {
 	color: white;
 }
 
-#hackeye {
+#phone-demo {
 	width: 280px;
 }
 
-#connect4, #numbergame {
+#window-demo {
 	width: 400px;
 	height: 300px;
 }

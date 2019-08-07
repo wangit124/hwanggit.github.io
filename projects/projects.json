@@ -11,6 +11,17 @@
         ]
     },
     {
+        "name": "HackerNews Clone",
+        "image_url": "../images/projects/hackernews/hackernews.jpg",
+        "visit": "./demos.html",
+        "code": "https://github.com/hwanggit/Hackernews-clone",
+        "description": "Live Newsfeed app that provides you with the latest popular events happening with the Hacker Community: <br><br> 1. Created SQL database using docker and database layer with Prisma client <br><br> 2. Implemented user posting, voting, and authentication features using GraphQl and React Native <br><br> 3. Set up local GraphQl server endpoint to handle query, mutation and subscription requests <br><br> Languages and Frameworks: React Native, GraphQl, Prisma, Node, Docker",
+        "tags": [
+            "all",
+            "mobile"
+        ]
+    },
+    {
         "name": "Hackeye.io",
         "image_url": "../images/projects/Hackeye/landing.png",
         "visit": "https://hackeye-io.herokuapp.com/",
@@ -26,11 +37,21 @@
         "image_url": "../images/projects/easytour/easytour-dest.png",
         "visit": "https://easy-tour-2019.herokuapp.com/",
         "code": "https://github.com/hwanggit/Easy-Tour",
-        "description": "Developed an AI web app for Tourism that maps out your trip for you (LA Hacks 2018): <br><br>1. Implemented color-to-emotion model using Google Vision to tag Flickr photos <br><br>2. Performed  RESTful API calls and CRUD operations to JSON files using Node.js <br><br>3. Rendered  3-D interactive map routes using HTML and MapBox GL JS <br><br>Languages and Frameworks: : HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API",
+        "description": "Developed an AI web app for Tourism that maps out your trip for you (LA Hacks 2018): <br><br>1. Implemented color-to-emotion model using Google Vision to tag Flickr photos <br><br>2. Performed  RESTful API calls and CRUD operations to JSON files using Node.js <br><br>3. Rendered  3-D interactive map routes using HTML and MapBox GL JS <br><br>Languages and Frameworks: HTML/CSS, Node.js, Google Cloud Vision, Flickr API, MapBox API",
         "tags": [
             "all",
             "websites",
             "hackathons"
+        ]
+    },
+    {
+        "name": "Luminerva RMG",
+        "image_url": "../images/projects/LuminervaRMG/RMGView(detailed).png",
+        "visit": "./demos.html",
+        "code": "https://github.com/hwanggit/LuminervaRMG",
+        "description": "Random Math Question Generator developed using JavaFX and OpenSDK 12: <br><br> 1. Created game-like UI layout using JavaFX BorderPanes, VBox, HBox, and UI Controls <br><br> 2. Dual-mode question generation, supports Trigonometry and Algebraic equations <br><br> 3. Implemented quadratic-solving function that pushes random choices with correct answer among them to front end <br><br> Languages and Frameworks: JavaFX, OpenSDK",
+        "tags": [
+            "all"
         ]
     },
     {
