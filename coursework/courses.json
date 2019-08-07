@@ -4,7 +4,7 @@
         "image_url": "../images/courses/trytonsplan.png",
         "visit": "",
         "code": "",
-        "description": "Topics included Entrepreneurship, Marketing, Legalities, Startup methodology: <br><br> 1. Played role of CTO for startup TrytonsPlan and created product development timeline for web app <br><br> 2. Learned how to conduct proper Customer Discovery and Market Research via Lean Startup Method <br><br> 3. Created 20-page business plan with business model canvas, executive summary, go-to-market plan, product features and financial projections <br><br> See Full Business Plan Document: <a href='../coursework/TrytonsPlan_Business_Plan.pdf'>TrytonsPlan</a>",
+        "description": "Topics included Entrepreneurship, Marketing, Legalities, Startup methodology: <br><br> 1. Played role of CTO for startup TrytonsPlan and created product development timeline for web app <br><br> 2. Learned how to conduct proper Customer Discovery and Market Research via Lean Startup Method <br><br> 3. Created 20-page business plan with business model canvas, executive summary, go-to-market plan, product features and financial projections <br><br> Links: <a href='../coursework/TrytonsPlan_Business_Plan.pdf'>Business Plan</a>, <a href='http://trytonsplan.herokuapp.com/'>Product</a>",
         "tags": [
             "all",
             "entrepreneurship"
