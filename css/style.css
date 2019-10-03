@@ -601,6 +601,11 @@ body {
 	height: 300px;
 }
 
+#demo-row {
+	display: flex;
+	flex-direction: row;
+}
+
 /* Desktop */
 @media all and (max-width: 1110px) {
 	#topnav li svg {
@@ -691,6 +696,10 @@ body {
 
 	.project-title, .course-title{
 		font-size: 30px;
+	}
+
+	#demo-row {
+		flex-direction: column;
 	}
 } 
 
