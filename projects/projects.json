@@ -1,7 +1,7 @@
 [
     {
         "name": "Vibely Inc.",
-        "image_url": "../images/projects/vibely/vibelylogo.jpg",
+        "image_url": "../images/projects/vibely/vibelylogo.png",
         "visit": "./demos.html",
         "code": "https://vibely.io",
         "description": "Full-stack mobile engineer at Forbes-featured IRL meetup services company: <br><br> 1. Shipped 20+ features for viral groups Subtle Asian Traits, Girls Gone Global <br><br> 2. Achieved 3-month milestone goals of 2x user retention and 3x user acquisition <br><br> 3. Developed flagship features like notification toasts, animated drag-down menus, navigation toolbars, authentication flows, forms, user search, 10 more <br><br> Tools: React Native, TypeScript, GraphQL, AWS RDS",
