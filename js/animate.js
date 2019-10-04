@@ -33,22 +33,12 @@ $(document).ready(function () {
     resizeDialogue("none")
 
     // Create a intro message and toggle 
-    var message = 'Click me to see my story!'
-    var toggle = 0
+    var message = "Hi, I'm Howard! <br> Click me to see my story!"
 
     // After a few seconds, display click me
     var messageRepeat = setInterval(function () {
         // Resize dialogue then toggle between messages
         resizeDialogue(message)
-
-        if (toggle == 0) {
-            message = "Hi, I'm Howard! <br> Welcome to my website!"
-            toggle = 1
-        }
-        else {
-            message = 'Click me to see my story!'
-            toggle = 0
-        }
     }, 2500)
 
     // On click, stop toggle
@@ -229,25 +219,15 @@ $('#sprout-animate').click(function () {
 
         setTimeout(function () {
             $('#dialog-box, #bottom-triangle').css('visibility', 'visible')
-            resizeDialogue("Hi, I'm Howard! <br> Welcome to my website!")
+            resizeDialogue("Hi, I'm Howard! <br> Click me to see my story!")
             
             // Create a intro message and toggle 
-            var message = 'Click me to see my story!'
-            var toggle = 0
+            var message = "Hi, I'm Howard! <br> Click me to see my story!"
 
             // After a few seconds, display click me
             var messageRepeat = setInterval(function () {
                 // Resize dialogue then toggle between messages
                 resizeDialogue(message)
-
-                if (toggle == 0) {
-                    message = "Hi, I'm Howard! <br> Welcome to my website!"
-                    toggle = 1
-                }
-                else {
-                    message = 'Click me to see my story!'
-                    toggle = 0
-                }
             }, 2500)
 
             // On click, stop toggle
@@ -358,7 +338,7 @@ function resizeDialogue(message) {
         $('#monologue').html(message)
     }
     else {
-        $('#monologue').html("Hi, I'm Howard! <br> Welcome to my website!")
+        $('#monologue').html("Hi, I'm Howard! <br> Click me to see my story!")
     }
 
     // Set dialog box height and width to be same as text
