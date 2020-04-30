@@ -198,7 +198,7 @@ body {
 }
 
 #dropdown-menu ul li {
-	padding-top: 17px;
+	padding-top: 12px;
 	text-align: center;
 	font-size: 15px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -246,7 +246,7 @@ body {
 	position: absolute;
 }
 
-.tooltip-2:before{
+/* .tooltip-2:before{
 	width: 0; 
 	height: 0; 
 	border-left: 10px solid transparent;
@@ -254,10 +254,10 @@ body {
 	border-bottom: 10px solid white;
 	top: -10px;
 	content: " ";
-	left: 14.5%;
+	left: 20%;
 	margin-left: -13px;
 	position: absolute;
-}
+} */
 
 #bottom-triangle {
 	width: 0; 
@@ -540,11 +540,11 @@ body {
 }
 
 .project-image:hover #project-overlay {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .course-image:hover #course-overlay {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .project-image img, .course-image img{

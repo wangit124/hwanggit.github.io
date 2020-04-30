@@ -142,10 +142,10 @@ $('#nav-link-1 img').click(function () {
 // About page
 $('#nav-link-6, #bottomnav #nav-link-6').click(function () {
     if ($(document).find('title').first().text() === "Howard Wang") {
-        location.href = "./resumes/howard_wang_resume_2019.pdf"
+        location.href = "./resumes/Resume_Howard_Wang.pdf"
     }
     else {
-        location.href = "../resumes/howard_wang_resume_2019.pdf"
+        location.href = "../resumes/Resume_Howard_Wang.pdf"
     }
 });
 
@@ -173,7 +173,7 @@ function populate(filePath, currentTag, page) {
             if (data[i].tags.includes(currentTag)) {
                 var item = ""
                 if (page === "project") {
-                    item = '<div class="'+page+'-item"><div class="'+page+'-image"><div id="'+page+'-overlay"><a href="' + data[i].visit + '" id="visit-btn">VISIT</a><a href="' + data[i].code + '" id="code-btn">CODE</a></div><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
+                    item = '<div class="'+page+'-item"><div class="'+page+'-image"><div id="'+page+'-overlay"><a href="' + data[i].visit + '" id="visit-btn">DEMO</a><a href="' + data[i].code + '" id="code-btn">SOURCE</a></div><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'
                 }
                 else {
                     item = '<div class="'+page+'-item"><div class="'+page+'-image"><img src="' + data[i].image_url + '"></div><div class="'+page+'-description"><b class="'+page+'-title">' + data[i].name + '</b><p>' + data[i].description + '</p></div></div>'

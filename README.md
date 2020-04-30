@@ -1,13 +1,7 @@
 # Personal Website
 
-Contains my work experience, portfolio, resume and social links! 
+Contains my work experience, portfolio, research experience, and resume! 
 
 **[Launch Here](https://www.h-wang.me)**
-
-All svg icons used are from:
-
-    1. The noun project: created by artists Maxim Kulikov, throwaway icons, Smalllike, supalerk laipawat, Loki Ba
-
-    2. Flaticon: created by Freepik, smalllikeart, RoundIcons
 
 ![alt](https://github.com/hwanggit/hwanggit.github.io/blob/master/images/header-image/h-wang.png)
