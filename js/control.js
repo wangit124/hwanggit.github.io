@@ -142,10 +142,10 @@ $('#nav-link-1 img').click(function () {
 // About page
 $('#nav-link-6, #bottomnav #nav-link-6').click(function () {
     if ($(document).find('title').first().text() === "Howard Wang") {
-        location.href = "./resumes/Resume_Howard_Wang.pdf"
+        location.href = "https://www.linkedin.com/in/hwangprof"
     }
     else {
-        location.href = "../resumes/Resume_Howard_Wang.pdf"
+        location.href = "https://www.linkedin.com/in/hwangprof"
     }
 });
 
