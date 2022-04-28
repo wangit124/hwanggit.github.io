@@ -1,34 +1,58 @@
 [
   {
-    "name": "Vibely Inc.",
+    "name": "Vibely - Full time",
     "image_url": "../images/projects/vibely/VibelyCollage.png",
-    "visit": "./demos.html",
+    "visit": "https://app.vibely.io",
     "code": "https://vibely.io",
-    "description": "From June 2019 to September 2019, I interned at Vibely, a prestigious company that specializes in fostering online communities and helping them meet up in real life. The app has over 25,000 users. <br><br> Currently, I am working as a part time software engineer leading many projects and working with senior software engineers. I have developed and shipped over 30 user-facing mobile features and bugs. My expertise is in mobile application development with React Native and GraphQL stack. <br><br> Technical Skills: React Native, TypeScript, GraphQL, Prisma, AWS CloudSearch, Branch SDK, Node.js",
+    "description": "I am a product development leader at Vibely, actively shipping mission-critical features that keep Vibely competitive in the market. I oversee the full product development cycle from ideation to launch and ensure that each feature I ship greatly impacts our company's key performance metrics. When I'm not building, I am managing and mentoring my fellow engineers, sharing my expertise in front-end and back-end development using Vibely's modern tech stack. <br><br> Technologies: React, React Native, Typescript, JavaScript, Node.js, GraphQL, AWS. <br><br> Vibely powers safe & uplifting communities that grow with exciting challenges, vibrant discussions, exclusive meetups, and intimate live rooms. Accomplish your dreams together ✨",
+    "tags": ["all", "mobile", "internships"]
+  },
+  {
+    "name": "ServiceNow - Associate Engineer",
+    "image_url": "../images/projects/servicenow/ServiceNowBanner.jpg",
+    "visit": "https://www.linkedin.com/company/servicenow/",
+    "code": "https://www.linkedin.com/company/servicenow/",
+    "description": "From September 2020 to January 2021, I worked as a contracted engineer for ServiceNow's quality engineering team. I implemented a suite of automated front-end unit tests with a team of engineers for an internal web app used by company employees. Employed test-driven development methods, ensuring 100% code and UI coverage. <br><br> Technologies: Java, Selenium Maven",
+    "tags": ["all", "mobile", "internships"]
+  },
+  {
+    "name": "ServiceNow - Internship",
+    "image_url": "../images/projects/servicenow/SnowInternshipVideo.jpeg",
+    "visit": "https://www.linkedin.com/company/servicenow/",
+    "code": "https://www.linkedin.com/company/servicenow/",
+    "description": "From June 2020 to September 2020, I worked with ServiceNow's Performance team to improve developer experience for running automated Apache Jmeter tests. The issue was having to download and setup a local server for each Jmeter test session. To improve load generation and scalability, I containerized the server and published it as a docker image to DockerHub, reducing developer setup time by 2x. <br><br> Technologies: Node.js, Docker, JavaScript",
+    "tags": ["all", "mobile", "internships"]
+  },
+  {
+    "name": "ServiceNow - Chat Sentiment Analyzer",
+    "image_url": "../images/projects/servicenow/ChatSentimentAnalyzer.jpeg",
+    "visit": "https://youtu.be/juqUiwuTig4",
+    "code": "https://www.linkedin.com/company/servicenow/",
+    "description": "From June 2020 to September 2020, I worked as a ServiceNow intern and competed in internal hack-a-thons hosted by the company. <br><br> 1) Our team drastically improved a widely-used JS scripting tool on NOW platform by adding IDE-like features. <br><br>2) We developed a chat sentiment analyzer web app using the NOW studio. <br><br> Technologies: React, Python, Flask, JavaScript, HTML, CSS",
     "tags": ["all", "mobile", "internships"]
   },
   {
     "name": "DevBot Coding Assistant",
     "image_url": "../images/projects/devbot/devbot.png",
-    "visit": "https://devbot2019.herokuapp.com/",
+    "visit": "https://github.com/hwanggit/DevBot-Coding-Assistant",
     "code": "https://github.com/hwanggit/DevBot-Coding-Assistant",
-    "description": "In October of 2019, I competed in my school's local hackathon, SD Hacks 2019. I built an Alexa Skill which sends information to a custom web app and prints boilerplate code on the screen by command. <br><br> To interface the Alexa Skill with the web app, I used real time databases such as Firebase and MongoDB to store voice commands and code queries. I also used an Amazon Echo to test my deployed Alexa Skill. <br><br> Technical Skills: Firebase, MongoDB, AWS Lambda, Alexa Skill, Node.js, Jovo, Javascript, Bootstrap",
+    "description": "In October of 2019, I competed in my school's local hackathon, SD Hacks 2019. I built an Alexa Skill which sends information to a custom web app and prints boilerplate code on the screen by command. <br><br> To interface the Alexa Skill with the web app, I used real time databases such as Firebase and MongoDB to store voice commands and code queries. I also used an Amazon Echo to test my deployed Alexa Skill. <br><br> Technologies: Firebase, MongoDB, AWS Lambda, Alexa Skill, Node.js, Jovo, Javascript, Bootstrap",
     "tags": ["all", "websites", "hackathons"]
   },
   {
     "name": "IEEE QP UCSD",
     "image_url": "../images/projects/ieeeqpucsd/ieeeqp.png",
-    "visit": "http://www.ieeeqp.com",
+    "visit": "https://github.com/hwanggit/ieeeqp.com",
     "code": "https://github.com/hwanggit/ieeeqp.com",
-    "description": "In the summer of 2019, I built a website for my student org, IEEE UCSD. My goal was to create an administrative dashboard tool for me and my fellow IEEE officer to use so we could more easily manage our 30+ project teams. <br><br> I ended up using a clean and beautiful web framework called Django, and deployed my own MySQL database using AWS RDS. The web app is currently used by over 100 students every quarter. <br><br> Technical Skills: Django, Python, MySQL, AWS RDS, Bootstrap, Javascript",
+    "description": "In the summer of 2019, I built a website for my student org, IEEE UCSD. My goal was to create an administrative dashboard tool for me and my fellow IEEE officer to use so we could more easily manage our 30+ project teams. <br><br> I ended up using a clean and beautiful web framework called Django, and deployed my own MySQL database using AWS RDS. The web app is currently used by over 100 students every quarter. <br><br> Technologies: Django, Python, MySQL, AWS RDS, Bootstrap, Javascript",
     "tags": ["all", "websites"]
   },
   {
     "name": "UCSD Club House",
     "image_url": "../images/projects/clubhouse/clubhouse.png",
-    "visit": "  https://club-house-sad.herokuapp.com/",
-    "code": "https://github.com/hwanggit/UCSD-Clubhouse",
-    "description": "I created Club House with my project team from a UCSD Computer Science course called CSE 110. It's purpose is to provide on-campus student organization recommendations to any new or existing UCSD college students. <br><br> I built most of the UI and business logic for Club House and also completed a full search-and-recommendation feature. <br><br> Technical Skills: Flask, Python, PostgreSQL, Bootstrap, Javascript",
+    "visit": "https://club-house-sad.herokuapp.com/",
+    "code": "https://club-house-sad.herokuapp.com/",
+    "description": "I created Club House with my project team from a UCSD Computer Science course called CSE 110. It's purpose is to provide on-campus student organization recommendations to any new or existing UCSD college students. <br><br> I built most of the UI and business logic for Club House and also completed a full search-and-recommendation feature. <br><br> Technologies: Flask, Python, PostgreSQL, Bootstrap, Javascript",
     "tags": ["all", "websites"]
   },
   {
@@ -36,7 +60,7 @@
     "image_url": "../images/projects/Hackeye/hackeye.jpg",
     "visit": "./demos.html",
     "code": "https://github.com/hwanggit/Hackeye-ios-app",
-    "description": "Hackeye iOS is inspired by SupplyFrame's online hackathon community, Hackaday. The app is for anyone who is enthusiastic about hardware projects, and wants to find other people near them to collaborate on those projects. <br><br> Using CoreLocation and CoreData, I created a location service to calculate and recommend nearby hardware projects to the use. I used Hackaday API to get the project information and render it on the app home page. <br><br> Technical Skills: Swift, Xcode, CoreLocation, Hackaday API",
+    "description": "Hackeye iOS is inspired by SupplyFrame's online hackathon community, Hackaday. The app is for anyone who is enthusiastic about hardware projects, and wants to find other people near them to collaborate on those projects. <br><br> Using CoreLocation and CoreData, I created a location service to calculate and recommend nearby hardware projects to the use. I used Hackaday API to get the project information and render it on the app home page. <br><br> Technologies: Swift, Xcode, CoreLocation, Hackaday API",
     "tags": ["all", "mobile"]
   },
   {
@@ -44,23 +68,23 @@
     "image_url": "../images/projects/hackernews/hackernews.jpg",
     "visit": "./demos.html",
     "code": "https://github.com/hwanggit/Hackernews-clone",
-    "description": "HackerNews was created through a React Native and GraphQL tutorial I attempted when preparing for my Summer 2019 internship. The app allows any user to look up relevant and current tech-related news including company acquisitions, tech culture, career opportunities, and more! <br><br> I completed a full 24 hour course using React Native and GraphQL. I wrote custom schemas and resolvers to query the news items, create a 'like' feature, and create a news post. <br><br> Technical Skills: React Native, GraphQl, Prisma, Node.js, Docker",
+    "description": "HackerNews was created through a React Native and GraphQL tutorial I attempted when preparing for my Summer 2019 internship. The app allows any user to look up relevant and current tech-related news including company acquisitions, tech culture, career opportunities, and more! <br><br> I completed a full 24 hour course using React Native and GraphQL. I wrote custom schemas and resolvers to query the news items, create a 'like' feature, and create a news post. <br><br> Technologies: React Native, GraphQl, Prisma, Node.js, Docker",
     "tags": ["all", "mobile"]
   },
   {
     "name": "Hackeye.io",
     "image_url": "../images/projects/Hackeye/landing.png",
-    "visit": "https://hackeye-io.herokuapp.com/",
+    "visit": "https://github.com/hwanggit/Hackeye.io",
     "code": "https://github.com/hwanggit/Hackeye.io",
-    "description": "Hackeye.io was an interview prep project I made for SupplyFrame before my first ever technical interview. Its purpose is to find popular online hardware projects that other enthusiasts and engineers have created. <br><br> I built an end-to-end project listings feed for the hardware projects on Hackaday.io community. I set up my own Node.js - EJS - HTML pipeline and created custom animations using JS animation libraries. Ran a web driver testing framework called NightWatch. <br><br> Technical Skills: Node.js, Tweenmax.js, GSAP, EJS, NightWatch, Javascript, HTML, CSS",
+    "description": "Hackeye.io was an interview prep project I made for SupplyFrame before my first ever technical interview. Its purpose is to find popular online hardware projects that other enthusiasts and engineers have created. <br><br> I built an end-to-end project listings feed for the hardware projects on Hackaday.io community. I set up my own Node.js - EJS - HTML pipeline and created custom animations using JS animation libraries. Ran a web driver testing framework called NightWatch. <br><br> Technologies: Node.js, Tweenmax.js, GSAP, EJS, NightWatch, Javascript, HTML, CSS",
     "tags": ["all", "websites"]
   },
   {
     "name": "Easy Tour",
     "image_url": "../images/projects/easytour/easytour-dest.png",
-    "visit": "https://easy-tour-2019.herokuapp.com/",
+    "visit": "https://github.com/hwanggit/Easy-Tour",
     "code": "https://github.com/hwanggit/Easy-Tour",
-    "description": "I built a web application that recommends destinations to tourists based on their travel mood. It  was completed in less than 48 hours at LA Hacks 2019. <br><br> First, I implemented a Node.js server to batch label images from Flickr API using Google Cloud Image Annotator API. Then, I developed a model to sort labeled images into different mood categories and used MapBox to display travel routes <br><br> Technical Skills: Javascript, Node.js, Express, Bootstrap, Google Cloud Vision API, Flickr API, MapBox API",
+    "description": "I built a web application that recommends destinations to tourists based on their travel mood. It  was completed in less than 48 hours at LA Hacks 2019. <br><br> First, I implemented a Node.js server to batch label images from Flickr API using Google Cloud Image Annotator API. Then, I developed a model to sort labeled images into different mood categories and used MapBox to display travel routes <br><br> Technologies: Javascript, Node.js, Express, Bootstrap, Google Cloud Vision API, Flickr API, MapBox API",
     "tags": ["all", "websites", "hackathons"]
   },
   {
@@ -68,7 +92,7 @@
     "image_url": "../images/projects/LuminervaRMG/RMGView(detailed).png",
     "visit": "./demos.html",
     "code": "https://github.com/hwanggit/LuminervaRMG",
-    "description": "I created a Java standalone application that generates random algebra questions for the player to solve. If the player selects the correct answer, they receive a point, otherwise they lose a point. <br><br> Using Java backend, I built the logic for generating random algebra equations and using quadratic formula to solve them. With JavaFx, I built the business logic into custom GUI components like panes and buttons. <br><br> Technical Skills: JavaFx, Java",
+    "description": "I created a Java standalone application that generates random algebra questions for the player to solve. If the player selects the correct answer, they receive a point, otherwise they lose a point. <br><br> Using Java backend, I built the logic for generating random algebra equations and using quadratic formula to solve them. With JavaFx, I built the business logic into custom GUI components like panes and buttons. <br><br> Technologies: JavaFx, Java",
     "tags": ["all"]
   },
   {
@@ -76,7 +100,7 @@
     "image_url": "../images/projects/pipe/pipe.jpg",
     "visit": "http://acsweb.ucsd.edu/~luw055/",
     "code": "https://github.com/hwanggit/Pi-for-Parkinson-s",
-    "description": "In Winter of my Sophomore year, I competed in IEEE Quarterly Projects for the first time. With my team, I created a Raspberry Pi IoT device that counteracts the tremor symptoms of Parkinson's patients. <br><br> Using a Raspberry Pi microcontroller and an Intertial Mass Unit AKA accelerometer, I calculated the spatial offset of the user's hand and twisted an attached spoon the opposite way. Then, I built a web app that displays real-time analytics from the device which are stored in Firebase. <br><br> Technical Skills: HTML, CSS, Javascript, Chart.js, Firebase, Python",
+    "description": "In Winter of my Sophomore year, I competed in IEEE Quarterly Projects for the first time. With my team, I created a Raspberry Pi IoT device that counteracts the tremor symptoms of Parkinson's patients. <br><br> Using a Raspberry Pi microcontroller and an Intertial Mass Unit AKA accelerometer, I calculated the spatial offset of the user's hand and twisted an attached spoon the opposite way. Then, I built a web app that displays real-time analytics from the device which are stored in Firebase. <br><br> Technologies: HTML, CSS, Javascript, Chart.js, Firebase, Python",
     "tags": ["all", "websites", "iot"]
   },
   {
@@ -84,7 +108,7 @@
     "image_url": "../images/projects/acachoir/acachoir.PNG",
     "visit": "https://acachoir.ucsd.edu",
     "code": "https://github.com/hwanggit/acachoir.ucsd.edu",
-    "description": "This is a student organization website I developed for my A Cappella group called UCSD A Cappella Choir. It was made using bootstrap and Javascript. <br><br> I designed a custom UI theme that fit our student organization's public image, and then developed around that idea. I set up this website in a week, and now it is used by every member of our organization for weekly updates. <br><br> Technical Skills: Bootstrap, Javascript, HTML, CSS",
+    "description": "This is a student organization website I developed for my A Cappella group called UCSD A Cappella Choir. It was made using bootstrap and Javascript. <br><br> I designed a custom UI theme that fit our student organization's public image, and then developed around that idea. I set up this website in a week, and now it is used by every member of our organization for weekly updates. <br><br> Technologies: Bootstrap, Javascript, HTML, CSS",
     "tags": ["all", "websites"]
   },
   {
@@ -92,7 +116,7 @@
     "image_url": "../images/projects/portfolio/dldesign.png",
     "visit": "https://dl-design.net",
     "code": "https://github.com/hwanggit/dl-design.net",
-    "description": "This is a website I created for my girlfriend, who wanted to show her interior design projects to potential employers. <br><br> The UI theme I went with was Material UI, and it was the first I worked with an UI framework. The development process was creative, free, and exciting. I experimented with many different component layouts and styles. The end result is a working online portfolio, fit for an interior designer. <br><br> Technical Skills: Materialize, Javascript, HTML, CSS",
+    "description": "This is a website I created for my girlfriend, who wanted to show her interior design projects to potential employers. <br><br> The UI theme I went with was Material UI, and it was the first I worked with an UI framework. The development process was creative, free, and exciting. I experimented with many different component layouts and styles. The end result is a working online portfolio, fit for an interior designer. <br><br> Technologies: Materialize, Javascript, HTML, CSS",
     "tags": ["all", "websites"]
   },
   {
@@ -100,7 +124,7 @@
     "image_url": "../images/projects/hackathons/LifeWatch.png",
     "visit": "https://devpost.com/software/lifewatch-v8qnh6",
     "code": "https://github.com/hwanggit/LifeWatch2.0",
-    "description": "LifeWatch is an SD Hacks project I created with my team. We were eager to experiment with VR technology using Unity and the Vive Controllers (now outdated). <br><br> Using Unity and programming in C#, I implemented the backend logic of saving drowning people in a sea. Then using the Vive Controllers, I tested these functionalities until they worked as expected. <br><br> Technical Skills: Unity, SteamVR API, VIVE, C#",
+    "description": "LifeWatch is an SD Hacks project I created with my team. We were eager to experiment with VR technology using Unity and the Vive Controllers (now outdated). <br><br> Using Unity and programming in C#, I implemented the backend logic of saving drowning people in a sea. Then using the Vive Controllers, I tested these functionalities until they worked as expected. <br><br> Technologies: Unity, SteamVR API, VIVE, C#",
     "tags": ["all", "hackathons"]
   },
   {
@@ -108,7 +132,7 @@
     "image_url": "../images/projects/hackathons/hikinnect.png",
     "visit": "https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy",
     "code": "https://prezi.com/1ez7tvnlrblj/hi-kinect-uiux/?utm_campaign=share&utm_medium=copy",
-    "description": "Hi-Kinect is a prototype mobile hiking app I pitched along with my team at the Mayor's Youth Council Hack-a-thon in Calgary, Canada. <br><br> First, we created a business plan and drafted prototype UI/UX features for app-based mock startup. Then, we planned to integrate Google Maps API and the city's Open Data Catalogue to help hikers navigate trails with more awareness. Overall, we placed 3rd out of 25 Teams and won $250 at the Hack-a-thon. <br><br> Technical Skills: Wix sites and Proto.io design software",
+    "description": "Hi-Kinect is a prototype mobile hiking app I pitched along with my team at the Mayor's Youth Council Hack-a-thon in Calgary, Canada. <br><br> First, we created a business plan and drafted prototype UI/UX features for app-based mock startup. Then, we planned to integrate Google Maps API and the city's Open Data Catalogue to help hikers navigate trails with more awareness. Overall, we placed 3rd out of 25 Teams and won $250 at the Hack-a-thon. <br><br> Technologies: Wix sites and Proto.io design software",
     "tags": ["all", "hackathons", "mobile"]
   },
   {
@@ -116,15 +140,15 @@
     "image_url": "../images/projects/coursework/connect4.png",
     "visit": "./demos.html",
     "code": "https://www.github.com/hwanggit/Connect-4",
-    "description": "I implemented a full-stack Connect 4 game on a plane ride home from Hawaii. I wanted to challenge myself and see if it was possible to develop a standalone Java game I could play anytime. <br><br> Technical Skills: Java, JavaFx",
+    "description": "I implemented a full-stack Connect 4 game on a plane ride home from Hawaii. I wanted to challenge myself and see if it was possible to develop a standalone Java game I could play anytime. <br><br> Technologies: Java, JavaFx",
     "tags": ["all"]
   },
   {
     "name": "2048",
     "image_url": "../images/projects/coursework/2048.png",
     "visit": "./demos.html",
-    "code": "",
-    "description": "As part of UCSD's Introduction to Programming in Java course, I developed a full-stack 2048 game with Java and JavaFx. The most difficult but rewarding part was figuring out the game logic and how to merge values in a number matrix based on keyboard controls. <br><br> Technical Skills: Java, JavaFx",
+    "code": "./demos.html",
+    "description": "As part of UCSD's Introduction to Programming in Java course, I developed a full-stack 2048 game with Java and JavaFx. The most difficult but rewarding part was figuring out the game logic and how to merge values in a number matrix based on keyboard controls. <br><br> Technologies: Java, JavaFx",
     "tags": ["all"]
   }
 ]
